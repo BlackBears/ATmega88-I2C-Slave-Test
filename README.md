@@ -16,6 +16,12 @@ To use this code, you will need:
 - An ATmega 88 MCU or a device in its family _(vide supra)_.
 - [AVR Studio 6](http://www.atmel.com/microsite/atmel_studio6/)
 
+####Note####
+
+You should either run the MCU at 3V3 or use some sort of logic level conversion if you really want to run at 5V.  The RPi is 3V3 as are the other devices on its I2C bus; and if you have a 5V slave on the bus, you risk damaging both the RPi and the other slaves.  This is my favorite way of doing bidirectional logic level conversion:
+
+![MOSFET logic level conversion](http://www.hobbytronics.co.uk/image/data/tutorial/mosfet_level_converter.jpg)
+
 ####Testing the code with Raspberry Pi####
 
 You will need to compile the code in AVR Studio 6 or whatever similar tool you use.  _(I like AVR Studio 6.  There are all sorts of arguments on forums like [AVR Freaks](http://www.avrfreaks.net) about what the best environment is.  It's mostly an opinion based thing.)_  You will need to load it onto the MCU.  How to do that is beyond the scope of these instructions, but some of the tools that I use are:  [AVRISP mkII](http://www.atmel.com/tools/AVRISPMKII.aspx), and [AVR programming adapter](https://www.sparkfun.com/products/8508) from Sparkfun.
