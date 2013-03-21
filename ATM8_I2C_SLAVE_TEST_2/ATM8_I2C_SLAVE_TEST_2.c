@@ -97,8 +97,7 @@ void i2cSlaveReceiveService(u08 receiveDataLength, u08* receiveData)
 		command -= 0x30;
 		u08 channel = command >> 1;
 		if( command & 0b00000001 ) {
-			localBuffer[0] = (u08)(A2D[channel] & ~0b11110000 );
-			
+			localBuffer[0] = (u08)A2D[channel];
 		}
 		else {
 			localBuffer[0] = (u08)(A2D[channel]>>8);
