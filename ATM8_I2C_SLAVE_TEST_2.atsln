@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ATM8_I2C_SLAVE_TEST_2", "ATM8_I2C_SLAVE_TEST_2\ATM8_I2C_SLAVE_TEST_2.cproj", "{73FBD3B2-240D-45CE-A5E6-0C2DB8BD3E69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73FBD3B2-240D-45CE-A5E6-0C2DB8BD3E69}.Debug|AVR.ActiveCfg = Debug|AVR
+		{73FBD3B2-240D-45CE-A5E6-0C2DB8BD3E69}.Debug|AVR.Build.0 = Debug|AVR
+		{73FBD3B2-240D-45CE-A5E6-0C2DB8BD3E69}.Release|AVR.ActiveCfg = Release|AVR
+		{73FBD3B2-240D-45CE-A5E6-0C2DB8BD3E69}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
