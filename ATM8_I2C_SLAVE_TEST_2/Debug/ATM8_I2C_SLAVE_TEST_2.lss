@@ -3,35 +3,35 @@ ATM8_I2C_SLAVE_TEST_2.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         00000002  00800100  000008a6  0000093a  2**0
+  0 .data         00000002  00800100  000008ce  00000962  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         000008a6  00000000  00000000  00000094  2**1
+  1 .text         000008ce  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .bss          00000014  00800102  00800102  0000093c  2**0
+  2 .bss          00000018  00800102  00800102  00000964  2**0
                   ALLOC
-  3 .stab         000006cc  00000000  00000000  0000093c  2**2
+  3 .stab         000006cc  00000000  00000000  00000964  2**2
                   CONTENTS, READONLY, DEBUGGING
-  4 .stabstr      00000097  00000000  00000000  00001008  2**0
+  4 .stabstr      00000097  00000000  00000000  00001030  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_aranges 00000060  00000000  00000000  0000109f  2**0
+  5 .debug_aranges 00000060  00000000  00000000  000010c7  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_pubnames 000002dc  00000000  00000000  000010ff  2**0
+  6 .debug_pubnames 000002d0  00000000  00000000  00001127  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_info   00000c48  00000000  00000000  000013db  2**0
+  7 .debug_info   00000bf4  00000000  00000000  000013f7  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_abbrev 000004e4  00000000  00000000  00002023  2**0
+  8 .debug_abbrev 0000046a  00000000  00000000  00001feb  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_line   00000bd5  00000000  00000000  00002507  2**0
+  9 .debug_line   00000b54  00000000  00000000  00002455  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_frame  00000220  00000000  00000000  000030dc  2**2
+ 10 .debug_frame  00000220  00000000  00000000  00002fac  2**2
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_str    00000551  00000000  00000000  000032fc  2**0
+ 11 .debug_str    00000564  00000000  00000000  000031cc  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_loc    0000047b  00000000  00000000  0000384d  2**0
+ 12 .debug_loc    000004f8  00000000  00000000  00003730  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_pubtypes 000000bb  00000000  00000000  00003cc8  2**0
+ 13 .debug_pubtypes 000000a1  00000000  00000000  00003c28  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_ranges 00000048  00000000  00000000  00003d83  2**0
+ 14 .debug_ranges 00000048  00000000  00000000  00003cc9  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -61,209 +61,209 @@ Disassembly of section .text:
   2a:	5b c1       	rjmp	.+694    	; 0x2e2 <__vector_21>
   2c:	e7 c0       	rjmp	.+462    	; 0x1fc <__bad_interrupt>
   2e:	e6 c0       	rjmp	.+460    	; 0x1fc <__bad_interrupt>
-  30:	04 c3       	rjmp	.+1544   	; 0x63a <__vector_24>
+  30:	18 c3       	rjmp	.+1584   	; 0x662 <__vector_24>
   32:	e4 c0       	rjmp	.+456    	; 0x1fc <__bad_interrupt>
-  34:	06 c4       	rjmp	.+2060   	; 0x842 <__vector_24+0x208>
-  36:	0d c4       	rjmp	.+2074   	; 0x852 <__vector_24+0x218>
-  38:	0c c4       	rjmp	.+2072   	; 0x852 <__vector_24+0x218>
-  3a:	0b c4       	rjmp	.+2070   	; 0x852 <__vector_24+0x218>
-  3c:	0a c4       	rjmp	.+2068   	; 0x852 <__vector_24+0x218>
-  3e:	09 c4       	rjmp	.+2066   	; 0x852 <__vector_24+0x218>
-  40:	08 c4       	rjmp	.+2064   	; 0x852 <__vector_24+0x218>
-  42:	07 c4       	rjmp	.+2062   	; 0x852 <__vector_24+0x218>
-  44:	16 c3       	rjmp	.+1580   	; 0x672 <__vector_24+0x38>
-  46:	05 c4       	rjmp	.+2058   	; 0x852 <__vector_24+0x218>
-  48:	04 c4       	rjmp	.+2056   	; 0x852 <__vector_24+0x218>
-  4a:	03 c4       	rjmp	.+2054   	; 0x852 <__vector_24+0x218>
-  4c:	02 c4       	rjmp	.+2052   	; 0x852 <__vector_24+0x218>
-  4e:	01 c4       	rjmp	.+2050   	; 0x852 <__vector_24+0x218>
-  50:	00 c4       	rjmp	.+2048   	; 0x852 <__vector_24+0x218>
-  52:	ff c3       	rjmp	.+2046   	; 0x852 <__vector_24+0x218>
-  54:	0e c3       	rjmp	.+1564   	; 0x672 <__vector_24+0x38>
-  56:	fd c3       	rjmp	.+2042   	; 0x852 <__vector_24+0x218>
-  58:	fc c3       	rjmp	.+2040   	; 0x852 <__vector_24+0x218>
-  5a:	fb c3       	rjmp	.+2038   	; 0x852 <__vector_24+0x218>
-  5c:	fa c3       	rjmp	.+2036   	; 0x852 <__vector_24+0x218>
-  5e:	f9 c3       	rjmp	.+2034   	; 0x852 <__vector_24+0x218>
-  60:	f8 c3       	rjmp	.+2032   	; 0x852 <__vector_24+0x218>
-  62:	f7 c3       	rjmp	.+2030   	; 0x852 <__vector_24+0x218>
-  64:	11 c3       	rjmp	.+1570   	; 0x688 <__vector_24+0x4e>
-  66:	f5 c3       	rjmp	.+2026   	; 0x852 <__vector_24+0x218>
-  68:	f4 c3       	rjmp	.+2024   	; 0x852 <__vector_24+0x218>
-  6a:	f3 c3       	rjmp	.+2022   	; 0x852 <__vector_24+0x218>
-  6c:	f2 c3       	rjmp	.+2020   	; 0x852 <__vector_24+0x218>
-  6e:	f1 c3       	rjmp	.+2018   	; 0x852 <__vector_24+0x218>
-  70:	f0 c3       	rjmp	.+2016   	; 0x852 <__vector_24+0x218>
-  72:	ef c3       	rjmp	.+2014   	; 0x852 <__vector_24+0x218>
-  74:	35 c3       	rjmp	.+1642   	; 0x6e0 <__vector_24+0xa6>
-  76:	ed c3       	rjmp	.+2010   	; 0x852 <__vector_24+0x218>
-  78:	ec c3       	rjmp	.+2008   	; 0x852 <__vector_24+0x218>
-  7a:	eb c3       	rjmp	.+2006   	; 0x852 <__vector_24+0x218>
-  7c:	ea c3       	rjmp	.+2004   	; 0x852 <__vector_24+0x218>
-  7e:	e9 c3       	rjmp	.+2002   	; 0x852 <__vector_24+0x218>
-  80:	e8 c3       	rjmp	.+2000   	; 0x852 <__vector_24+0x218>
-  82:	e7 c3       	rjmp	.+1998   	; 0x852 <__vector_24+0x218>
-  84:	01 c3       	rjmp	.+1538   	; 0x688 <__vector_24+0x4e>
-  86:	e5 c3       	rjmp	.+1994   	; 0x852 <__vector_24+0x218>
-  88:	e4 c3       	rjmp	.+1992   	; 0x852 <__vector_24+0x218>
-  8a:	e3 c3       	rjmp	.+1990   	; 0x852 <__vector_24+0x218>
-  8c:	e2 c3       	rjmp	.+1988   	; 0x852 <__vector_24+0x218>
-  8e:	e1 c3       	rjmp	.+1986   	; 0x852 <__vector_24+0x218>
-  90:	e0 c3       	rjmp	.+1984   	; 0x852 <__vector_24+0x218>
-  92:	df c3       	rjmp	.+1982   	; 0x852 <__vector_24+0x218>
-  94:	25 c3       	rjmp	.+1610   	; 0x6e0 <__vector_24+0xa6>
-  96:	dd c3       	rjmp	.+1978   	; 0x852 <__vector_24+0x218>
-  98:	dc c3       	rjmp	.+1976   	; 0x852 <__vector_24+0x218>
-  9a:	db c3       	rjmp	.+1974   	; 0x852 <__vector_24+0x218>
-  9c:	da c3       	rjmp	.+1972   	; 0x852 <__vector_24+0x218>
-  9e:	d9 c3       	rjmp	.+1970   	; 0x852 <__vector_24+0x218>
-  a0:	d8 c3       	rjmp	.+1968   	; 0x852 <__vector_24+0x218>
-  a2:	d7 c3       	rjmp	.+1966   	; 0x852 <__vector_24+0x218>
-  a4:	26 c3       	rjmp	.+1612   	; 0x6f2 <__vector_24+0xb8>
-  a6:	d5 c3       	rjmp	.+1962   	; 0x852 <__vector_24+0x218>
-  a8:	d4 c3       	rjmp	.+1960   	; 0x852 <__vector_24+0x218>
-  aa:	d3 c3       	rjmp	.+1958   	; 0x852 <__vector_24+0x218>
-  ac:	d2 c3       	rjmp	.+1956   	; 0x852 <__vector_24+0x218>
-  ae:	d1 c3       	rjmp	.+1954   	; 0x852 <__vector_24+0x218>
-  b0:	d0 c3       	rjmp	.+1952   	; 0x852 <__vector_24+0x218>
-  b2:	cf c3       	rjmp	.+1950   	; 0x852 <__vector_24+0x218>
-  b4:	33 c3       	rjmp	.+1638   	; 0x71c <__vector_24+0xe2>
-  b6:	cd c3       	rjmp	.+1946   	; 0x852 <__vector_24+0x218>
-  b8:	cc c3       	rjmp	.+1944   	; 0x852 <__vector_24+0x218>
-  ba:	cb c3       	rjmp	.+1942   	; 0x852 <__vector_24+0x218>
-  bc:	ca c3       	rjmp	.+1940   	; 0x852 <__vector_24+0x218>
-  be:	c9 c3       	rjmp	.+1938   	; 0x852 <__vector_24+0x218>
-  c0:	c8 c3       	rjmp	.+1936   	; 0x852 <__vector_24+0x218>
-  c2:	c7 c3       	rjmp	.+1934   	; 0x852 <__vector_24+0x218>
-  c4:	0d c3       	rjmp	.+1562   	; 0x6e0 <__vector_24+0xa6>
-  c6:	c5 c3       	rjmp	.+1930   	; 0x852 <__vector_24+0x218>
-  c8:	c4 c3       	rjmp	.+1928   	; 0x852 <__vector_24+0x218>
-  ca:	c3 c3       	rjmp	.+1926   	; 0x852 <__vector_24+0x218>
-  cc:	c2 c3       	rjmp	.+1924   	; 0x852 <__vector_24+0x218>
-  ce:	c1 c3       	rjmp	.+1922   	; 0x852 <__vector_24+0x218>
-  d0:	c0 c3       	rjmp	.+1920   	; 0x852 <__vector_24+0x218>
-  d2:	bf c3       	rjmp	.+1918   	; 0x852 <__vector_24+0x218>
-  d4:	17 c3       	rjmp	.+1582   	; 0x704 <__vector_24+0xca>
-  d6:	bd c3       	rjmp	.+1914   	; 0x852 <__vector_24+0x218>
-  d8:	bc c3       	rjmp	.+1912   	; 0x852 <__vector_24+0x218>
-  da:	bb c3       	rjmp	.+1910   	; 0x852 <__vector_24+0x218>
-  dc:	ba c3       	rjmp	.+1908   	; 0x852 <__vector_24+0x218>
-  de:	b9 c3       	rjmp	.+1906   	; 0x852 <__vector_24+0x218>
-  e0:	b8 c3       	rjmp	.+1904   	; 0x852 <__vector_24+0x218>
-  e2:	b7 c3       	rjmp	.+1902   	; 0x852 <__vector_24+0x218>
-  e4:	f1 c2       	rjmp	.+1506   	; 0x6c8 <__vector_24+0x8e>
-  e6:	b5 c3       	rjmp	.+1898   	; 0x852 <__vector_24+0x218>
-  e8:	b4 c3       	rjmp	.+1896   	; 0x852 <__vector_24+0x218>
-  ea:	b3 c3       	rjmp	.+1894   	; 0x852 <__vector_24+0x218>
-  ec:	b2 c3       	rjmp	.+1892   	; 0x852 <__vector_24+0x218>
-  ee:	b1 c3       	rjmp	.+1890   	; 0x852 <__vector_24+0x218>
-  f0:	b0 c3       	rjmp	.+1888   	; 0x852 <__vector_24+0x218>
-  f2:	af c3       	rjmp	.+1886   	; 0x852 <__vector_24+0x218>
-  f4:	2b c3       	rjmp	.+1622   	; 0x74c <__vector_24+0x112>
-  f6:	ad c3       	rjmp	.+1882   	; 0x852 <__vector_24+0x218>
-  f8:	ac c3       	rjmp	.+1880   	; 0x852 <__vector_24+0x218>
-  fa:	ab c3       	rjmp	.+1878   	; 0x852 <__vector_24+0x218>
-  fc:	aa c3       	rjmp	.+1876   	; 0x852 <__vector_24+0x218>
-  fe:	a9 c3       	rjmp	.+1874   	; 0x852 <__vector_24+0x218>
- 100:	a8 c3       	rjmp	.+1872   	; 0x852 <__vector_24+0x218>
- 102:	a7 c3       	rjmp	.+1870   	; 0x852 <__vector_24+0x218>
- 104:	23 c3       	rjmp	.+1606   	; 0x74c <__vector_24+0x112>
- 106:	a5 c3       	rjmp	.+1866   	; 0x852 <__vector_24+0x218>
- 108:	a4 c3       	rjmp	.+1864   	; 0x852 <__vector_24+0x218>
- 10a:	a3 c3       	rjmp	.+1862   	; 0x852 <__vector_24+0x218>
- 10c:	a2 c3       	rjmp	.+1860   	; 0x852 <__vector_24+0x218>
- 10e:	a1 c3       	rjmp	.+1858   	; 0x852 <__vector_24+0x218>
- 110:	a0 c3       	rjmp	.+1856   	; 0x852 <__vector_24+0x218>
- 112:	9f c3       	rjmp	.+1854   	; 0x852 <__vector_24+0x218>
- 114:	1b c3       	rjmp	.+1590   	; 0x74c <__vector_24+0x112>
- 116:	9d c3       	rjmp	.+1850   	; 0x852 <__vector_24+0x218>
- 118:	9c c3       	rjmp	.+1848   	; 0x852 <__vector_24+0x218>
- 11a:	9b c3       	rjmp	.+1846   	; 0x852 <__vector_24+0x218>
- 11c:	9a c3       	rjmp	.+1844   	; 0x852 <__vector_24+0x218>
- 11e:	99 c3       	rjmp	.+1842   	; 0x852 <__vector_24+0x218>
- 120:	98 c3       	rjmp	.+1840   	; 0x852 <__vector_24+0x218>
- 122:	97 c3       	rjmp	.+1838   	; 0x852 <__vector_24+0x218>
- 124:	13 c3       	rjmp	.+1574   	; 0x74c <__vector_24+0x112>
- 126:	95 c3       	rjmp	.+1834   	; 0x852 <__vector_24+0x218>
- 128:	94 c3       	rjmp	.+1832   	; 0x852 <__vector_24+0x218>
- 12a:	93 c3       	rjmp	.+1830   	; 0x852 <__vector_24+0x218>
- 12c:	92 c3       	rjmp	.+1828   	; 0x852 <__vector_24+0x218>
- 12e:	91 c3       	rjmp	.+1826   	; 0x852 <__vector_24+0x218>
- 130:	90 c3       	rjmp	.+1824   	; 0x852 <__vector_24+0x218>
- 132:	8f c3       	rjmp	.+1822   	; 0x852 <__vector_24+0x218>
- 134:	17 c3       	rjmp	.+1582   	; 0x764 <__vector_24+0x12a>
- 136:	8d c3       	rjmp	.+1818   	; 0x852 <__vector_24+0x218>
- 138:	8c c3       	rjmp	.+1816   	; 0x852 <__vector_24+0x218>
- 13a:	8b c3       	rjmp	.+1814   	; 0x852 <__vector_24+0x218>
- 13c:	8a c3       	rjmp	.+1812   	; 0x852 <__vector_24+0x218>
- 13e:	89 c3       	rjmp	.+1810   	; 0x852 <__vector_24+0x218>
- 140:	88 c3       	rjmp	.+1808   	; 0x852 <__vector_24+0x218>
- 142:	87 c3       	rjmp	.+1806   	; 0x852 <__vector_24+0x218>
- 144:	2b c3       	rjmp	.+1622   	; 0x79c <__vector_24+0x162>
- 146:	85 c3       	rjmp	.+1802   	; 0x852 <__vector_24+0x218>
- 148:	84 c3       	rjmp	.+1800   	; 0x852 <__vector_24+0x218>
- 14a:	83 c3       	rjmp	.+1798   	; 0x852 <__vector_24+0x218>
- 14c:	82 c3       	rjmp	.+1796   	; 0x852 <__vector_24+0x218>
- 14e:	81 c3       	rjmp	.+1794   	; 0x852 <__vector_24+0x218>
- 150:	80 c3       	rjmp	.+1792   	; 0x852 <__vector_24+0x218>
- 152:	7f c3       	rjmp	.+1790   	; 0x852 <__vector_24+0x218>
- 154:	07 c3       	rjmp	.+1550   	; 0x764 <__vector_24+0x12a>
- 156:	7d c3       	rjmp	.+1786   	; 0x852 <__vector_24+0x218>
- 158:	7c c3       	rjmp	.+1784   	; 0x852 <__vector_24+0x218>
- 15a:	7b c3       	rjmp	.+1782   	; 0x852 <__vector_24+0x218>
- 15c:	7a c3       	rjmp	.+1780   	; 0x852 <__vector_24+0x218>
- 15e:	79 c3       	rjmp	.+1778   	; 0x852 <__vector_24+0x218>
- 160:	78 c3       	rjmp	.+1776   	; 0x852 <__vector_24+0x218>
- 162:	77 c3       	rjmp	.+1774   	; 0x852 <__vector_24+0x218>
- 164:	1b c3       	rjmp	.+1590   	; 0x79c <__vector_24+0x162>
- 166:	75 c3       	rjmp	.+1770   	; 0x852 <__vector_24+0x218>
- 168:	74 c3       	rjmp	.+1768   	; 0x852 <__vector_24+0x218>
- 16a:	73 c3       	rjmp	.+1766   	; 0x852 <__vector_24+0x218>
- 16c:	72 c3       	rjmp	.+1764   	; 0x852 <__vector_24+0x218>
- 16e:	71 c3       	rjmp	.+1762   	; 0x852 <__vector_24+0x218>
- 170:	70 c3       	rjmp	.+1760   	; 0x852 <__vector_24+0x218>
- 172:	6f c3       	rjmp	.+1758   	; 0x852 <__vector_24+0x218>
- 174:	1a c3       	rjmp	.+1588   	; 0x7aa <__vector_24+0x170>
- 176:	6d c3       	rjmp	.+1754   	; 0x852 <__vector_24+0x218>
- 178:	6c c3       	rjmp	.+1752   	; 0x852 <__vector_24+0x218>
- 17a:	6b c3       	rjmp	.+1750   	; 0x852 <__vector_24+0x218>
- 17c:	6a c3       	rjmp	.+1748   	; 0x852 <__vector_24+0x218>
- 17e:	69 c3       	rjmp	.+1746   	; 0x852 <__vector_24+0x218>
- 180:	68 c3       	rjmp	.+1744   	; 0x852 <__vector_24+0x218>
- 182:	67 c3       	rjmp	.+1742   	; 0x852 <__vector_24+0x218>
- 184:	26 c3       	rjmp	.+1612   	; 0x7d2 <__vector_24+0x198>
- 186:	65 c3       	rjmp	.+1738   	; 0x852 <__vector_24+0x218>
- 188:	64 c3       	rjmp	.+1736   	; 0x852 <__vector_24+0x218>
- 18a:	63 c3       	rjmp	.+1734   	; 0x852 <__vector_24+0x218>
- 18c:	62 c3       	rjmp	.+1732   	; 0x852 <__vector_24+0x218>
- 18e:	61 c3       	rjmp	.+1730   	; 0x852 <__vector_24+0x218>
- 190:	60 c3       	rjmp	.+1728   	; 0x852 <__vector_24+0x218>
- 192:	5f c3       	rjmp	.+1726   	; 0x852 <__vector_24+0x218>
- 194:	1e c3       	rjmp	.+1596   	; 0x7d2 <__vector_24+0x198>
- 196:	5d c3       	rjmp	.+1722   	; 0x852 <__vector_24+0x218>
- 198:	5c c3       	rjmp	.+1720   	; 0x852 <__vector_24+0x218>
- 19a:	5b c3       	rjmp	.+1718   	; 0x852 <__vector_24+0x218>
- 19c:	5a c3       	rjmp	.+1716   	; 0x852 <__vector_24+0x218>
- 19e:	59 c3       	rjmp	.+1714   	; 0x852 <__vector_24+0x218>
- 1a0:	58 c3       	rjmp	.+1712   	; 0x852 <__vector_24+0x218>
- 1a2:	57 c3       	rjmp	.+1710   	; 0x852 <__vector_24+0x218>
- 1a4:	27 c3       	rjmp	.+1614   	; 0x7f4 <__vector_24+0x1ba>
- 1a6:	55 c3       	rjmp	.+1706   	; 0x852 <__vector_24+0x218>
- 1a8:	54 c3       	rjmp	.+1704   	; 0x852 <__vector_24+0x218>
- 1aa:	53 c3       	rjmp	.+1702   	; 0x852 <__vector_24+0x218>
- 1ac:	52 c3       	rjmp	.+1700   	; 0x852 <__vector_24+0x218>
- 1ae:	51 c3       	rjmp	.+1698   	; 0x852 <__vector_24+0x218>
- 1b0:	50 c3       	rjmp	.+1696   	; 0x852 <__vector_24+0x218>
- 1b2:	4f c3       	rjmp	.+1694   	; 0x852 <__vector_24+0x218>
- 1b4:	3d c3       	rjmp	.+1658   	; 0x830 <__vector_24+0x1f6>
- 1b6:	4d c3       	rjmp	.+1690   	; 0x852 <__vector_24+0x218>
- 1b8:	4c c3       	rjmp	.+1688   	; 0x852 <__vector_24+0x218>
- 1ba:	4b c3       	rjmp	.+1686   	; 0x852 <__vector_24+0x218>
- 1bc:	4a c3       	rjmp	.+1684   	; 0x852 <__vector_24+0x218>
- 1be:	49 c3       	rjmp	.+1682   	; 0x852 <__vector_24+0x218>
- 1c0:	48 c3       	rjmp	.+1680   	; 0x852 <__vector_24+0x218>
- 1c2:	47 c3       	rjmp	.+1678   	; 0x852 <__vector_24+0x218>
- 1c4:	35 c3       	rjmp	.+1642   	; 0x830 <__vector_24+0x1f6>
+  34:	1a c4       	rjmp	.+2100   	; 0x86a <__vector_24+0x208>
+  36:	21 c4       	rjmp	.+2114   	; 0x87a <__vector_24+0x218>
+  38:	20 c4       	rjmp	.+2112   	; 0x87a <__vector_24+0x218>
+  3a:	1f c4       	rjmp	.+2110   	; 0x87a <__vector_24+0x218>
+  3c:	1e c4       	rjmp	.+2108   	; 0x87a <__vector_24+0x218>
+  3e:	1d c4       	rjmp	.+2106   	; 0x87a <__vector_24+0x218>
+  40:	1c c4       	rjmp	.+2104   	; 0x87a <__vector_24+0x218>
+  42:	1b c4       	rjmp	.+2102   	; 0x87a <__vector_24+0x218>
+  44:	2a c3       	rjmp	.+1620   	; 0x69a <__vector_24+0x38>
+  46:	19 c4       	rjmp	.+2098   	; 0x87a <__vector_24+0x218>
+  48:	18 c4       	rjmp	.+2096   	; 0x87a <__vector_24+0x218>
+  4a:	17 c4       	rjmp	.+2094   	; 0x87a <__vector_24+0x218>
+  4c:	16 c4       	rjmp	.+2092   	; 0x87a <__vector_24+0x218>
+  4e:	15 c4       	rjmp	.+2090   	; 0x87a <__vector_24+0x218>
+  50:	14 c4       	rjmp	.+2088   	; 0x87a <__vector_24+0x218>
+  52:	13 c4       	rjmp	.+2086   	; 0x87a <__vector_24+0x218>
+  54:	22 c3       	rjmp	.+1604   	; 0x69a <__vector_24+0x38>
+  56:	11 c4       	rjmp	.+2082   	; 0x87a <__vector_24+0x218>
+  58:	10 c4       	rjmp	.+2080   	; 0x87a <__vector_24+0x218>
+  5a:	0f c4       	rjmp	.+2078   	; 0x87a <__vector_24+0x218>
+  5c:	0e c4       	rjmp	.+2076   	; 0x87a <__vector_24+0x218>
+  5e:	0d c4       	rjmp	.+2074   	; 0x87a <__vector_24+0x218>
+  60:	0c c4       	rjmp	.+2072   	; 0x87a <__vector_24+0x218>
+  62:	0b c4       	rjmp	.+2070   	; 0x87a <__vector_24+0x218>
+  64:	25 c3       	rjmp	.+1610   	; 0x6b0 <__vector_24+0x4e>
+  66:	09 c4       	rjmp	.+2066   	; 0x87a <__vector_24+0x218>
+  68:	08 c4       	rjmp	.+2064   	; 0x87a <__vector_24+0x218>
+  6a:	07 c4       	rjmp	.+2062   	; 0x87a <__vector_24+0x218>
+  6c:	06 c4       	rjmp	.+2060   	; 0x87a <__vector_24+0x218>
+  6e:	05 c4       	rjmp	.+2058   	; 0x87a <__vector_24+0x218>
+  70:	04 c4       	rjmp	.+2056   	; 0x87a <__vector_24+0x218>
+  72:	03 c4       	rjmp	.+2054   	; 0x87a <__vector_24+0x218>
+  74:	49 c3       	rjmp	.+1682   	; 0x708 <__vector_24+0xa6>
+  76:	01 c4       	rjmp	.+2050   	; 0x87a <__vector_24+0x218>
+  78:	00 c4       	rjmp	.+2048   	; 0x87a <__vector_24+0x218>
+  7a:	ff c3       	rjmp	.+2046   	; 0x87a <__vector_24+0x218>
+  7c:	fe c3       	rjmp	.+2044   	; 0x87a <__vector_24+0x218>
+  7e:	fd c3       	rjmp	.+2042   	; 0x87a <__vector_24+0x218>
+  80:	fc c3       	rjmp	.+2040   	; 0x87a <__vector_24+0x218>
+  82:	fb c3       	rjmp	.+2038   	; 0x87a <__vector_24+0x218>
+  84:	15 c3       	rjmp	.+1578   	; 0x6b0 <__vector_24+0x4e>
+  86:	f9 c3       	rjmp	.+2034   	; 0x87a <__vector_24+0x218>
+  88:	f8 c3       	rjmp	.+2032   	; 0x87a <__vector_24+0x218>
+  8a:	f7 c3       	rjmp	.+2030   	; 0x87a <__vector_24+0x218>
+  8c:	f6 c3       	rjmp	.+2028   	; 0x87a <__vector_24+0x218>
+  8e:	f5 c3       	rjmp	.+2026   	; 0x87a <__vector_24+0x218>
+  90:	f4 c3       	rjmp	.+2024   	; 0x87a <__vector_24+0x218>
+  92:	f3 c3       	rjmp	.+2022   	; 0x87a <__vector_24+0x218>
+  94:	39 c3       	rjmp	.+1650   	; 0x708 <__vector_24+0xa6>
+  96:	f1 c3       	rjmp	.+2018   	; 0x87a <__vector_24+0x218>
+  98:	f0 c3       	rjmp	.+2016   	; 0x87a <__vector_24+0x218>
+  9a:	ef c3       	rjmp	.+2014   	; 0x87a <__vector_24+0x218>
+  9c:	ee c3       	rjmp	.+2012   	; 0x87a <__vector_24+0x218>
+  9e:	ed c3       	rjmp	.+2010   	; 0x87a <__vector_24+0x218>
+  a0:	ec c3       	rjmp	.+2008   	; 0x87a <__vector_24+0x218>
+  a2:	eb c3       	rjmp	.+2006   	; 0x87a <__vector_24+0x218>
+  a4:	3a c3       	rjmp	.+1652   	; 0x71a <__vector_24+0xb8>
+  a6:	e9 c3       	rjmp	.+2002   	; 0x87a <__vector_24+0x218>
+  a8:	e8 c3       	rjmp	.+2000   	; 0x87a <__vector_24+0x218>
+  aa:	e7 c3       	rjmp	.+1998   	; 0x87a <__vector_24+0x218>
+  ac:	e6 c3       	rjmp	.+1996   	; 0x87a <__vector_24+0x218>
+  ae:	e5 c3       	rjmp	.+1994   	; 0x87a <__vector_24+0x218>
+  b0:	e4 c3       	rjmp	.+1992   	; 0x87a <__vector_24+0x218>
+  b2:	e3 c3       	rjmp	.+1990   	; 0x87a <__vector_24+0x218>
+  b4:	47 c3       	rjmp	.+1678   	; 0x744 <__vector_24+0xe2>
+  b6:	e1 c3       	rjmp	.+1986   	; 0x87a <__vector_24+0x218>
+  b8:	e0 c3       	rjmp	.+1984   	; 0x87a <__vector_24+0x218>
+  ba:	df c3       	rjmp	.+1982   	; 0x87a <__vector_24+0x218>
+  bc:	de c3       	rjmp	.+1980   	; 0x87a <__vector_24+0x218>
+  be:	dd c3       	rjmp	.+1978   	; 0x87a <__vector_24+0x218>
+  c0:	dc c3       	rjmp	.+1976   	; 0x87a <__vector_24+0x218>
+  c2:	db c3       	rjmp	.+1974   	; 0x87a <__vector_24+0x218>
+  c4:	21 c3       	rjmp	.+1602   	; 0x708 <__vector_24+0xa6>
+  c6:	d9 c3       	rjmp	.+1970   	; 0x87a <__vector_24+0x218>
+  c8:	d8 c3       	rjmp	.+1968   	; 0x87a <__vector_24+0x218>
+  ca:	d7 c3       	rjmp	.+1966   	; 0x87a <__vector_24+0x218>
+  cc:	d6 c3       	rjmp	.+1964   	; 0x87a <__vector_24+0x218>
+  ce:	d5 c3       	rjmp	.+1962   	; 0x87a <__vector_24+0x218>
+  d0:	d4 c3       	rjmp	.+1960   	; 0x87a <__vector_24+0x218>
+  d2:	d3 c3       	rjmp	.+1958   	; 0x87a <__vector_24+0x218>
+  d4:	2b c3       	rjmp	.+1622   	; 0x72c <__vector_24+0xca>
+  d6:	d1 c3       	rjmp	.+1954   	; 0x87a <__vector_24+0x218>
+  d8:	d0 c3       	rjmp	.+1952   	; 0x87a <__vector_24+0x218>
+  da:	cf c3       	rjmp	.+1950   	; 0x87a <__vector_24+0x218>
+  dc:	ce c3       	rjmp	.+1948   	; 0x87a <__vector_24+0x218>
+  de:	cd c3       	rjmp	.+1946   	; 0x87a <__vector_24+0x218>
+  e0:	cc c3       	rjmp	.+1944   	; 0x87a <__vector_24+0x218>
+  e2:	cb c3       	rjmp	.+1942   	; 0x87a <__vector_24+0x218>
+  e4:	05 c3       	rjmp	.+1546   	; 0x6f0 <__vector_24+0x8e>
+  e6:	c9 c3       	rjmp	.+1938   	; 0x87a <__vector_24+0x218>
+  e8:	c8 c3       	rjmp	.+1936   	; 0x87a <__vector_24+0x218>
+  ea:	c7 c3       	rjmp	.+1934   	; 0x87a <__vector_24+0x218>
+  ec:	c6 c3       	rjmp	.+1932   	; 0x87a <__vector_24+0x218>
+  ee:	c5 c3       	rjmp	.+1930   	; 0x87a <__vector_24+0x218>
+  f0:	c4 c3       	rjmp	.+1928   	; 0x87a <__vector_24+0x218>
+  f2:	c3 c3       	rjmp	.+1926   	; 0x87a <__vector_24+0x218>
+  f4:	3f c3       	rjmp	.+1662   	; 0x774 <__vector_24+0x112>
+  f6:	c1 c3       	rjmp	.+1922   	; 0x87a <__vector_24+0x218>
+  f8:	c0 c3       	rjmp	.+1920   	; 0x87a <__vector_24+0x218>
+  fa:	bf c3       	rjmp	.+1918   	; 0x87a <__vector_24+0x218>
+  fc:	be c3       	rjmp	.+1916   	; 0x87a <__vector_24+0x218>
+  fe:	bd c3       	rjmp	.+1914   	; 0x87a <__vector_24+0x218>
+ 100:	bc c3       	rjmp	.+1912   	; 0x87a <__vector_24+0x218>
+ 102:	bb c3       	rjmp	.+1910   	; 0x87a <__vector_24+0x218>
+ 104:	37 c3       	rjmp	.+1646   	; 0x774 <__vector_24+0x112>
+ 106:	b9 c3       	rjmp	.+1906   	; 0x87a <__vector_24+0x218>
+ 108:	b8 c3       	rjmp	.+1904   	; 0x87a <__vector_24+0x218>
+ 10a:	b7 c3       	rjmp	.+1902   	; 0x87a <__vector_24+0x218>
+ 10c:	b6 c3       	rjmp	.+1900   	; 0x87a <__vector_24+0x218>
+ 10e:	b5 c3       	rjmp	.+1898   	; 0x87a <__vector_24+0x218>
+ 110:	b4 c3       	rjmp	.+1896   	; 0x87a <__vector_24+0x218>
+ 112:	b3 c3       	rjmp	.+1894   	; 0x87a <__vector_24+0x218>
+ 114:	2f c3       	rjmp	.+1630   	; 0x774 <__vector_24+0x112>
+ 116:	b1 c3       	rjmp	.+1890   	; 0x87a <__vector_24+0x218>
+ 118:	b0 c3       	rjmp	.+1888   	; 0x87a <__vector_24+0x218>
+ 11a:	af c3       	rjmp	.+1886   	; 0x87a <__vector_24+0x218>
+ 11c:	ae c3       	rjmp	.+1884   	; 0x87a <__vector_24+0x218>
+ 11e:	ad c3       	rjmp	.+1882   	; 0x87a <__vector_24+0x218>
+ 120:	ac c3       	rjmp	.+1880   	; 0x87a <__vector_24+0x218>
+ 122:	ab c3       	rjmp	.+1878   	; 0x87a <__vector_24+0x218>
+ 124:	27 c3       	rjmp	.+1614   	; 0x774 <__vector_24+0x112>
+ 126:	a9 c3       	rjmp	.+1874   	; 0x87a <__vector_24+0x218>
+ 128:	a8 c3       	rjmp	.+1872   	; 0x87a <__vector_24+0x218>
+ 12a:	a7 c3       	rjmp	.+1870   	; 0x87a <__vector_24+0x218>
+ 12c:	a6 c3       	rjmp	.+1868   	; 0x87a <__vector_24+0x218>
+ 12e:	a5 c3       	rjmp	.+1866   	; 0x87a <__vector_24+0x218>
+ 130:	a4 c3       	rjmp	.+1864   	; 0x87a <__vector_24+0x218>
+ 132:	a3 c3       	rjmp	.+1862   	; 0x87a <__vector_24+0x218>
+ 134:	2b c3       	rjmp	.+1622   	; 0x78c <__vector_24+0x12a>
+ 136:	a1 c3       	rjmp	.+1858   	; 0x87a <__vector_24+0x218>
+ 138:	a0 c3       	rjmp	.+1856   	; 0x87a <__vector_24+0x218>
+ 13a:	9f c3       	rjmp	.+1854   	; 0x87a <__vector_24+0x218>
+ 13c:	9e c3       	rjmp	.+1852   	; 0x87a <__vector_24+0x218>
+ 13e:	9d c3       	rjmp	.+1850   	; 0x87a <__vector_24+0x218>
+ 140:	9c c3       	rjmp	.+1848   	; 0x87a <__vector_24+0x218>
+ 142:	9b c3       	rjmp	.+1846   	; 0x87a <__vector_24+0x218>
+ 144:	3f c3       	rjmp	.+1662   	; 0x7c4 <__vector_24+0x162>
+ 146:	99 c3       	rjmp	.+1842   	; 0x87a <__vector_24+0x218>
+ 148:	98 c3       	rjmp	.+1840   	; 0x87a <__vector_24+0x218>
+ 14a:	97 c3       	rjmp	.+1838   	; 0x87a <__vector_24+0x218>
+ 14c:	96 c3       	rjmp	.+1836   	; 0x87a <__vector_24+0x218>
+ 14e:	95 c3       	rjmp	.+1834   	; 0x87a <__vector_24+0x218>
+ 150:	94 c3       	rjmp	.+1832   	; 0x87a <__vector_24+0x218>
+ 152:	93 c3       	rjmp	.+1830   	; 0x87a <__vector_24+0x218>
+ 154:	1b c3       	rjmp	.+1590   	; 0x78c <__vector_24+0x12a>
+ 156:	91 c3       	rjmp	.+1826   	; 0x87a <__vector_24+0x218>
+ 158:	90 c3       	rjmp	.+1824   	; 0x87a <__vector_24+0x218>
+ 15a:	8f c3       	rjmp	.+1822   	; 0x87a <__vector_24+0x218>
+ 15c:	8e c3       	rjmp	.+1820   	; 0x87a <__vector_24+0x218>
+ 15e:	8d c3       	rjmp	.+1818   	; 0x87a <__vector_24+0x218>
+ 160:	8c c3       	rjmp	.+1816   	; 0x87a <__vector_24+0x218>
+ 162:	8b c3       	rjmp	.+1814   	; 0x87a <__vector_24+0x218>
+ 164:	2f c3       	rjmp	.+1630   	; 0x7c4 <__vector_24+0x162>
+ 166:	89 c3       	rjmp	.+1810   	; 0x87a <__vector_24+0x218>
+ 168:	88 c3       	rjmp	.+1808   	; 0x87a <__vector_24+0x218>
+ 16a:	87 c3       	rjmp	.+1806   	; 0x87a <__vector_24+0x218>
+ 16c:	86 c3       	rjmp	.+1804   	; 0x87a <__vector_24+0x218>
+ 16e:	85 c3       	rjmp	.+1802   	; 0x87a <__vector_24+0x218>
+ 170:	84 c3       	rjmp	.+1800   	; 0x87a <__vector_24+0x218>
+ 172:	83 c3       	rjmp	.+1798   	; 0x87a <__vector_24+0x218>
+ 174:	2e c3       	rjmp	.+1628   	; 0x7d2 <__vector_24+0x170>
+ 176:	81 c3       	rjmp	.+1794   	; 0x87a <__vector_24+0x218>
+ 178:	80 c3       	rjmp	.+1792   	; 0x87a <__vector_24+0x218>
+ 17a:	7f c3       	rjmp	.+1790   	; 0x87a <__vector_24+0x218>
+ 17c:	7e c3       	rjmp	.+1788   	; 0x87a <__vector_24+0x218>
+ 17e:	7d c3       	rjmp	.+1786   	; 0x87a <__vector_24+0x218>
+ 180:	7c c3       	rjmp	.+1784   	; 0x87a <__vector_24+0x218>
+ 182:	7b c3       	rjmp	.+1782   	; 0x87a <__vector_24+0x218>
+ 184:	3a c3       	rjmp	.+1652   	; 0x7fa <__vector_24+0x198>
+ 186:	79 c3       	rjmp	.+1778   	; 0x87a <__vector_24+0x218>
+ 188:	78 c3       	rjmp	.+1776   	; 0x87a <__vector_24+0x218>
+ 18a:	77 c3       	rjmp	.+1774   	; 0x87a <__vector_24+0x218>
+ 18c:	76 c3       	rjmp	.+1772   	; 0x87a <__vector_24+0x218>
+ 18e:	75 c3       	rjmp	.+1770   	; 0x87a <__vector_24+0x218>
+ 190:	74 c3       	rjmp	.+1768   	; 0x87a <__vector_24+0x218>
+ 192:	73 c3       	rjmp	.+1766   	; 0x87a <__vector_24+0x218>
+ 194:	32 c3       	rjmp	.+1636   	; 0x7fa <__vector_24+0x198>
+ 196:	71 c3       	rjmp	.+1762   	; 0x87a <__vector_24+0x218>
+ 198:	70 c3       	rjmp	.+1760   	; 0x87a <__vector_24+0x218>
+ 19a:	6f c3       	rjmp	.+1758   	; 0x87a <__vector_24+0x218>
+ 19c:	6e c3       	rjmp	.+1756   	; 0x87a <__vector_24+0x218>
+ 19e:	6d c3       	rjmp	.+1754   	; 0x87a <__vector_24+0x218>
+ 1a0:	6c c3       	rjmp	.+1752   	; 0x87a <__vector_24+0x218>
+ 1a2:	6b c3       	rjmp	.+1750   	; 0x87a <__vector_24+0x218>
+ 1a4:	3b c3       	rjmp	.+1654   	; 0x81c <__vector_24+0x1ba>
+ 1a6:	69 c3       	rjmp	.+1746   	; 0x87a <__vector_24+0x218>
+ 1a8:	68 c3       	rjmp	.+1744   	; 0x87a <__vector_24+0x218>
+ 1aa:	67 c3       	rjmp	.+1742   	; 0x87a <__vector_24+0x218>
+ 1ac:	66 c3       	rjmp	.+1740   	; 0x87a <__vector_24+0x218>
+ 1ae:	65 c3       	rjmp	.+1738   	; 0x87a <__vector_24+0x218>
+ 1b0:	64 c3       	rjmp	.+1736   	; 0x87a <__vector_24+0x218>
+ 1b2:	63 c3       	rjmp	.+1734   	; 0x87a <__vector_24+0x218>
+ 1b4:	51 c3       	rjmp	.+1698   	; 0x858 <__vector_24+0x1f6>
+ 1b6:	61 c3       	rjmp	.+1730   	; 0x87a <__vector_24+0x218>
+ 1b8:	60 c3       	rjmp	.+1728   	; 0x87a <__vector_24+0x218>
+ 1ba:	5f c3       	rjmp	.+1726   	; 0x87a <__vector_24+0x218>
+ 1bc:	5e c3       	rjmp	.+1724   	; 0x87a <__vector_24+0x218>
+ 1be:	5d c3       	rjmp	.+1722   	; 0x87a <__vector_24+0x218>
+ 1c0:	5c c3       	rjmp	.+1720   	; 0x87a <__vector_24+0x218>
+ 1c2:	5b c3       	rjmp	.+1718   	; 0x87a <__vector_24+0x218>
+ 1c4:	49 c3       	rjmp	.+1682   	; 0x858 <__vector_24+0x1f6>
 
 000001c6 <__ctors_end>:
  1c6:	11 24       	eor	r1, r1
@@ -277,7 +277,7 @@ Disassembly of section .text:
  1d2:	11 e0       	ldi	r17, 0x01	; 1
  1d4:	a0 e0       	ldi	r26, 0x00	; 0
  1d6:	b1 e0       	ldi	r27, 0x01	; 1
- 1d8:	e6 ea       	ldi	r30, 0xA6	; 166
+ 1d8:	ee ec       	ldi	r30, 0xCE	; 206
  1da:	f8 e0       	ldi	r31, 0x08	; 8
  1dc:	02 c0       	rjmp	.+4      	; 0x1e2 <__do_copy_data+0x10>
  1de:	05 90       	lpm	r0, Z+
@@ -296,11 +296,11 @@ Disassembly of section .text:
  1f0:	1d 92       	st	X+, r1
 
 000001f2 <.do_clear_bss_start>:
- 1f2:	a6 31       	cpi	r26, 0x16	; 22
+ 1f2:	aa 31       	cpi	r26, 0x1A	; 26
  1f4:	b1 07       	cpc	r27, r17
  1f6:	e1 f7       	brne	.-8      	; 0x1f0 <.do_clear_bss_loop>
- 1f8:	9a d0       	rcall	.+308    	; 0x32e <main>
- 1fa:	53 c3       	rjmp	.+1702   	; 0x8a2 <_exit>
+ 1f8:	a9 d0       	rcall	.+338    	; 0x34c <main>
+ 1fa:	67 c3       	rjmp	.+1742   	; 0x8ca <_exit>
 
 000001fc <__bad_interrupt>:
  1fc:	01 cf       	rjmp	.-510    	; 0x0 <__vectors>
@@ -536,878 +536,852 @@ SIGNAL(SIG_ADC)
  2fe:	18 95       	reti
 
 00000300 <i2cSlaveReceiveService>:
-}
-
-// slave operations 
+*/
 void i2cSlaveReceiveService(u08 receiveDataLength, u08* receiveData) 
 { 
-	PORTB |= (1<<PB0);
- 300:	28 9a       	sbi	0x05, 0	; 5
-	if( receiveData[0] == 0x30 ) {
- 302:	fb 01       	movw	r30, r22
- 304:	80 81       	ld	r24, Z
- 306:	80 33       	cpi	r24, 0x30	; 48
- 308:	29 f4       	brne	.+10     	; 0x314 <i2cSlaveReceiveService+0x14>
-		localBuffer[0] = (u08)ADC_0;
- 30a:	80 91 10 01 	lds	r24, 0x0110
- 30e:	80 93 14 01 	sts	0x0114, r24
- 312:	08 95       	ret
-	}
-	else if( receiveData[0] == 0x31 ) {
- 314:	81 33       	cpi	r24, 0x31	; 49
- 316:	21 f4       	brne	.+8      	; 0x320 <i2cSlaveReceiveService+0x20>
-		localBuffer[0] = (u08)ADC_1;
- 318:	80 91 12 01 	lds	r24, 0x0112
- 31c:	80 93 14 01 	sts	0x0114, r24
- 320:	08 95       	ret
 
-00000322 <i2cSlaveTransmitService>:
-	//{
-	//	*transmitData++ = localBuffer[i];
-	//}
-
-	//localBuffer[0]++;
-	transmitData[0] = localBuffer[0];
- 322:	80 91 14 01 	lds	r24, 0x0114
- 326:	fb 01       	movw	r30, r22
- 328:	80 83       	st	Z, r24
-	return 1;
-	//return localBufferLength;
- 32a:	81 e0       	ldi	r24, 0x01	; 1
+#ifdef DEBUG
+	PORTB ^= (1<<PB0);
+ 300:	95 b1       	in	r25, 0x05	; 5
+ 302:	81 e0       	ldi	r24, 0x01	; 1
+ 304:	89 27       	eor	r24, r25
+ 306:	85 b9       	out	0x05, r24	; 5
+#endif
+	u08 command = receiveData[0];
+ 308:	fb 01       	movw	r30, r22
+ 30a:	80 81       	ld	r24, Z
+	if( command < 0x40 ) {
+ 30c:	80 34       	cpi	r24, 0x40	; 64
+ 30e:	b8 f4       	brcc	.+46     	; 0x33e <i2cSlaveReceiveService+0x3e>
+		command -= 0x30;
+ 310:	80 53       	subi	r24, 0x30	; 48
+		u08 channel = command >> 1;
+ 312:	e8 2f       	mov	r30, r24
+ 314:	e6 95       	lsr	r30
+		if( command & 0b00000001 ) {
+ 316:	80 ff       	sbrs	r24, 0
+ 318:	0a c0       	rjmp	.+20     	; 0x32e <i2cSlaveReceiveService+0x2e>
+			localBuffer[0] = (u08)(A2D[channel] & ~0b11110000 );
+ 31a:	f0 e0       	ldi	r31, 0x00	; 0
+ 31c:	ee 0f       	add	r30, r30
+ 31e:	ff 1f       	adc	r31, r31
+ 320:	e0 5f       	subi	r30, 0xF0	; 240
+ 322:	fe 4f       	sbci	r31, 0xFE	; 254
+ 324:	80 81       	ld	r24, Z
+ 326:	8f 70       	andi	r24, 0x0F	; 15
+ 328:	80 93 18 01 	sts	0x0118, r24
  32c:	08 95       	ret
+			
+		}
+		else {
+			localBuffer[0] = (u08)(A2D[channel]>>8);
+ 32e:	f0 e0       	ldi	r31, 0x00	; 0
+ 330:	ee 0f       	add	r30, r30
+ 332:	ff 1f       	adc	r31, r31
+ 334:	e0 5f       	subi	r30, 0xF0	; 240
+ 336:	fe 4f       	sbci	r31, 0xFE	; 254
+ 338:	81 81       	ldd	r24, Z+1	; 0x01
+ 33a:	80 93 18 01 	sts	0x0118, r24
+ 33e:	08 95       	ret
 
-0000032e <main>:
+00000340 <i2cSlaveTransmitService>:
+
+//	this function is called when a master on the bus addresses and wishes
+//	to read data
+u08 i2cSlaveTransmitService(u08 transmitDataLengthMax, u08* transmitData)
+{
+	transmitData[0] = localBuffer[0];
+ 340:	80 91 18 01 	lds	r24, 0x0118
+ 344:	fb 01       	movw	r30, r22
+ 346:	80 83       	st	Z, r24
+	return 1;
+ 348:	81 e0       	ldi	r24, 0x01	; 1
+ 34a:	08 95       	ret
+
+0000034c <main>:
+
+//	function prototypes
 void i2cSlaveReceiveService(u08 receiveDataLength, u08* receiveData);
 u08 i2cSlaveTransmitService(u08 transmitDataLengthMax, u08* transmitData);
 
-int main(void)
-{
+int main(void) {
+ 34c:	0f 93       	push	r16
+ 34e:	1f 93       	push	r17
+ 350:	cf 93       	push	r28
+ 352:	df 93       	push	r29
+#ifdef DEBUG
 	DDRB |= (1<<PB0);
- 32e:	20 9a       	sbi	0x04, 0	; 4
+ 354:	20 9a       	sbi	0x04, 0	; 4
+#endif
 	i2cInit();
- 330:	38 d0       	rcall	.+112    	; 0x3a2 <i2cInit>
+ 356:	39 d0       	rcall	.+114    	; 0x3ca <i2cInit>
 	i2cSetLocalDeviceAddr(LOCAL_I2C_ADDR,0);
- 332:	8c e4       	ldi	r24, 0x4C	; 76
- 334:	60 e0       	ldi	r22, 0x00	; 0
- 336:	53 d0       	rcall	.+166    	; 0x3de <i2cSetLocalDeviceAddr>
+ 358:	8c e4       	ldi	r24, 0x4C	; 76
+ 35a:	60 e0       	ldi	r22, 0x00	; 0
+ 35c:	54 d0       	rcall	.+168    	; 0x406 <i2cSetLocalDeviceAddr>
 	i2cSetSlaveReceiveHandler(i2cSlaveReceiveService);
- 338:	80 e8       	ldi	r24, 0x80	; 128
- 33a:	91 e0       	ldi	r25, 0x01	; 1
- 33c:	59 d0       	rcall	.+178    	; 0x3f0 <i2cSetSlaveReceiveHandler>
+ 35e:	80 e8       	ldi	r24, 0x80	; 128
+ 360:	91 e0       	ldi	r25, 0x01	; 1
+ 362:	5a d0       	rcall	.+180    	; 0x418 <i2cSetSlaveReceiveHandler>
 	i2cSetSlaveTransmitHandler(i2cSlaveTransmitService);
- 33e:	81 e9       	ldi	r24, 0x91	; 145
- 340:	91 e0       	ldi	r25, 0x01	; 1
- 342:	5b d0       	rcall	.+182    	; 0x3fa <i2cSetSlaveTransmitHandler>
+ 364:	80 ea       	ldi	r24, 0xA0	; 160
+ 366:	91 e0       	ldi	r25, 0x01	; 1
+ 368:	5c d0       	rcall	.+184    	; 0x422 <i2cSetSlaveTransmitHandler>
 	
 	a2dInit();
- 344:	77 df       	rcall	.-274    	; 0x234 <a2dInit>
+ 36a:	64 df       	rcall	.-312    	; 0x234 <a2dInit>
 	a2dSetReference(ADC_REFERENCE_AVCC);
- 346:	81 e0       	ldi	r24, 0x01	; 1
- 348:	6a df       	rcall	.-300    	; 0x21e <a2dSetReference>
-	#else
-		//round up by default
-		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
-	#endif
-
-	__builtin_avr_delay_cycles(__ticks_dc);
- 34a:	8f e1       	ldi	r24, 0x1F	; 31
- 34c:	9e e4       	ldi	r25, 0x4E	; 78
- 34e:	01 97       	sbiw	r24, 0x01	; 1
- 350:	f1 f7       	brne	.-4      	; 0x34e <main+0x20>
- 352:	00 c0       	rjmp	.+0      	; 0x354 <main+0x26>
- 354:	00 00       	nop
+ 36c:	81 e0       	ldi	r24, 0x01	; 1
+ 36e:	57 df       	rcall	.-338    	; 0x21e <a2dSetReference>
 	
-    while(1)
-    {
-        _delay_ms(10);
-		ADC_0 = a2dConvert10bit(0);
- 356:	80 e0       	ldi	r24, 0x00	; 0
- 358:	9e df       	rcall	.-196    	; 0x296 <a2dConvert10bit>
- 35a:	90 93 11 01 	sts	0x0111, r25
- 35e:	80 93 10 01 	sts	0x0110, r24
-		ADC_1 = a2dConvert10bit(1);
- 362:	81 e0       	ldi	r24, 0x01	; 1
- 364:	98 df       	rcall	.-208    	; 0x296 <a2dConvert10bit>
- 366:	90 93 13 01 	sts	0x0113, r25
- 36a:	80 93 12 01 	sts	0x0112, r24
- 36e:	ed cf       	rjmp	.-38     	; 0x34a <main+0x1c>
+	//	main loop reads the ADC's in a round-robin fashion
+	u08 current_adc = 0;
+ 370:	10 e0       	ldi	r17, 0x00	; 0
+    while(1) {
+        A2D[current_adc] = a2dConvert10bit(current_adc);
+ 372:	c0 e1       	ldi	r28, 0x10	; 16
+ 374:	d1 e0       	ldi	r29, 0x01	; 1
+        current_adc++;
+        if( current_adc > 3 ) {
+        	current_adc = 0;
+ 376:	00 e0       	ldi	r16, 0x00	; 0
+ 378:	01 c0       	rjmp	.+2      	; 0x37c <main+0x30>
+ 37a:	10 2f       	mov	r17, r16
+	a2dSetReference(ADC_REFERENCE_AVCC);
+	
+	//	main loop reads the ADC's in a round-robin fashion
+	u08 current_adc = 0;
+    while(1) {
+        A2D[current_adc] = a2dConvert10bit(current_adc);
+ 37c:	81 2f       	mov	r24, r17
+ 37e:	8b df       	rcall	.-234    	; 0x296 <a2dConvert10bit>
+ 380:	e1 2f       	mov	r30, r17
+ 382:	f0 e0       	ldi	r31, 0x00	; 0
+ 384:	ee 0f       	add	r30, r30
+ 386:	ff 1f       	adc	r31, r31
+ 388:	ec 0f       	add	r30, r28
+ 38a:	fd 1f       	adc	r31, r29
+ 38c:	91 83       	std	Z+1, r25	; 0x01
+ 38e:	80 83       	st	Z, r24
+        current_adc++;
+ 390:	1f 5f       	subi	r17, 0xFF	; 255
+        if( current_adc > 3 ) {
+ 392:	14 30       	cpi	r17, 0x04	; 4
+ 394:	90 f7       	brcc	.-28     	; 0x37a <main+0x2e>
+ 396:	f2 cf       	rjmp	.-28     	; 0x37c <main+0x30>
 
-00000370 <i2cSetBitrate>:
+00000398 <i2cSetBitrate>:
 	// enable interrupts
 	sei();
 }
 
 void i2cSetBitrate(u16 bitrateKHz)
 {
- 370:	bc 01       	movw	r22, r24
+ 398:	bc 01       	movw	r22, r24
 	// SCL freq = F_CPU/(16+2*TWBR))
 	#ifdef TWPS0
 		// for processors with additional bitrate division (mega128)
 		// SCL freq = F_CPU/(16+2*TWBR*4^TWPS)
 		// set TWPS to zero
 		cbi(TWSR, TWPS0);
- 372:	e9 eb       	ldi	r30, 0xB9	; 185
- 374:	f0 e0       	ldi	r31, 0x00	; 0
- 376:	80 81       	ld	r24, Z
- 378:	8e 7f       	andi	r24, 0xFE	; 254
- 37a:	80 83       	st	Z, r24
+ 39a:	e9 eb       	ldi	r30, 0xB9	; 185
+ 39c:	f0 e0       	ldi	r31, 0x00	; 0
+ 39e:	80 81       	ld	r24, Z
+ 3a0:	8e 7f       	andi	r24, 0xFE	; 254
+ 3a2:	80 83       	st	Z, r24
 		cbi(TWSR, TWPS1);
- 37c:	80 81       	ld	r24, Z
- 37e:	8d 7f       	andi	r24, 0xFD	; 253
- 380:	80 83       	st	Z, r24
+ 3a4:	80 81       	ld	r24, Z
+ 3a6:	8d 7f       	andi	r24, 0xFD	; 253
+ 3a8:	80 83       	st	Z, r24
 	#endif
 	// calculate bitrate division	
 	bitrate_div = ((F_CPU/1000l)/bitrateKHz);
- 382:	80 e4       	ldi	r24, 0x40	; 64
- 384:	9f e1       	ldi	r25, 0x1F	; 31
- 386:	79 d2       	rcall	.+1266   	; 0x87a <__udivmodhi4>
+ 3aa:	80 e4       	ldi	r24, 0x40	; 64
+ 3ac:	9f e1       	ldi	r25, 0x1F	; 31
+ 3ae:	79 d2       	rcall	.+1266   	; 0x8a2 <__udivmodhi4>
 	if(bitrate_div >= 16)
- 388:	60 31       	cpi	r22, 0x10	; 16
- 38a:	40 f0       	brcs	.+16     	; 0x39c <i2cSetBitrate+0x2c>
+ 3b0:	60 31       	cpi	r22, 0x10	; 16
+ 3b2:	40 f0       	brcs	.+16     	; 0x3c4 <i2cSetBitrate+0x2c>
 		bitrate_div = (bitrate_div-16)/2;
- 38c:	70 e0       	ldi	r23, 0x00	; 0
- 38e:	60 51       	subi	r22, 0x10	; 16
- 390:	70 40       	sbci	r23, 0x00	; 0
- 392:	12 f4       	brpl	.+4      	; 0x398 <i2cSetBitrate+0x28>
- 394:	6f 5f       	subi	r22, 0xFF	; 255
- 396:	7f 4f       	sbci	r23, 0xFF	; 255
- 398:	75 95       	asr	r23
- 39a:	67 95       	ror	r22
+ 3b4:	70 e0       	ldi	r23, 0x00	; 0
+ 3b6:	60 51       	subi	r22, 0x10	; 16
+ 3b8:	70 40       	sbci	r23, 0x00	; 0
+ 3ba:	12 f4       	brpl	.+4      	; 0x3c0 <i2cSetBitrate+0x28>
+ 3bc:	6f 5f       	subi	r22, 0xFF	; 255
+ 3be:	7f 4f       	sbci	r23, 0xFF	; 255
+ 3c0:	75 95       	asr	r23
+ 3c2:	67 95       	ror	r22
 	outb(TWBR, bitrate_div);
- 39c:	60 93 b8 00 	sts	0x00B8, r22
+ 3c4:	60 93 b8 00 	sts	0x00B8, r22
 }
- 3a0:	08 95       	ret
+ 3c8:	08 95       	ret
 
-000003a2 <i2cInit>:
+000003ca <i2cInit>:
 // functions
 void i2cInit(void)
 {
 	// set pull-up resistors on I2C bus pins
 	// TODO: should #ifdef these
 	sbi(PORTC, 0);	// i2c SCL on ATmega163,323,16,32,etc
- 3a2:	40 9a       	sbi	0x08, 0	; 8
+ 3ca:	40 9a       	sbi	0x08, 0	; 8
 	sbi(PORTC, 1);	// i2c SDA on ATmega163,323,16,32,etc
- 3a4:	41 9a       	sbi	0x08, 1	; 8
+ 3cc:	41 9a       	sbi	0x08, 1	; 8
 	sbi(PORTD, 0);	// i2c SCL on ATmega128,64
- 3a6:	58 9a       	sbi	0x0b, 0	; 11
+ 3ce:	58 9a       	sbi	0x0b, 0	; 11
 	sbi(PORTD, 1);	// i2c SDA on ATmega128,64
- 3a8:	59 9a       	sbi	0x0b, 1	; 11
+ 3d0:	59 9a       	sbi	0x0b, 1	; 11
 
 	// clear SlaveReceive and SlaveTransmit handler to null
 	i2cSlaveReceive = 0;
- 3aa:	10 92 0c 01 	sts	0x010C, r1
- 3ae:	10 92 0b 01 	sts	0x010B, r1
+ 3d2:	10 92 0c 01 	sts	0x010C, r1
+ 3d6:	10 92 0b 01 	sts	0x010B, r1
 	i2cSlaveTransmit = 0;
- 3b2:	10 92 0e 01 	sts	0x010E, r1
- 3b6:	10 92 0d 01 	sts	0x010D, r1
+ 3da:	10 92 0e 01 	sts	0x010E, r1
+ 3de:	10 92 0d 01 	sts	0x010D, r1
 	// set i2c bit rate to 100KHz
 	i2cSetBitrate(100);
- 3ba:	84 e6       	ldi	r24, 0x64	; 100
- 3bc:	90 e0       	ldi	r25, 0x00	; 0
- 3be:	d8 df       	rcall	.-80     	; 0x370 <i2cSetBitrate>
+ 3e2:	84 e6       	ldi	r24, 0x64	; 100
+ 3e4:	90 e0       	ldi	r25, 0x00	; 0
+ 3e6:	d8 df       	rcall	.-80     	; 0x398 <i2cSetBitrate>
 	// enable TWI (two-wire interface)
 	sbi(TWCR, TWEN);
- 3c0:	ec eb       	ldi	r30, 0xBC	; 188
- 3c2:	f0 e0       	ldi	r31, 0x00	; 0
- 3c4:	80 81       	ld	r24, Z
- 3c6:	84 60       	ori	r24, 0x04	; 4
- 3c8:	80 83       	st	Z, r24
+ 3e8:	ec eb       	ldi	r30, 0xBC	; 188
+ 3ea:	f0 e0       	ldi	r31, 0x00	; 0
+ 3ec:	80 81       	ld	r24, Z
+ 3ee:	84 60       	ori	r24, 0x04	; 4
+ 3f0:	80 83       	st	Z, r24
 	// set state
 	I2cState = I2C_IDLE;
- 3ca:	10 92 02 01 	sts	0x0102, r1
+ 3f2:	10 92 02 01 	sts	0x0102, r1
 	// enable TWI interrupt and slave address ACK
 	sbi(TWCR, TWIE);
- 3ce:	80 81       	ld	r24, Z
- 3d0:	81 60       	ori	r24, 0x01	; 1
- 3d2:	80 83       	st	Z, r24
+ 3f6:	80 81       	ld	r24, Z
+ 3f8:	81 60       	ori	r24, 0x01	; 1
+ 3fa:	80 83       	st	Z, r24
 	sbi(TWCR, TWEA);
- 3d4:	80 81       	ld	r24, Z
- 3d6:	80 64       	ori	r24, 0x40	; 64
- 3d8:	80 83       	st	Z, r24
+ 3fc:	80 81       	ld	r24, Z
+ 3fe:	80 64       	ori	r24, 0x40	; 64
+ 400:	80 83       	st	Z, r24
 	//outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
 	// enable interrupts
 	sei();
- 3da:	78 94       	sei
+ 402:	78 94       	sei
 }
- 3dc:	08 95       	ret
+ 404:	08 95       	ret
 
-000003de <i2cSetLocalDeviceAddr>:
+00000406 <i2cSetLocalDeviceAddr>:
 }
 
 void i2cSetLocalDeviceAddr(u08 deviceAddr, u08 genCallEn)
 {
 	// set local device address (used in slave mode only)
 	outb(TWAR, ((deviceAddr&0xFE) | (genCallEn?1:0)) );
- 3de:	91 e0       	ldi	r25, 0x01	; 1
- 3e0:	66 23       	and	r22, r22
- 3e2:	09 f4       	brne	.+2      	; 0x3e6 <i2cSetLocalDeviceAddr+0x8>
- 3e4:	90 e0       	ldi	r25, 0x00	; 0
- 3e6:	8e 7f       	andi	r24, 0xFE	; 254
- 3e8:	98 2b       	or	r25, r24
- 3ea:	90 93 ba 00 	sts	0x00BA, r25
+ 406:	91 e0       	ldi	r25, 0x01	; 1
+ 408:	66 23       	and	r22, r22
+ 40a:	09 f4       	brne	.+2      	; 0x40e <i2cSetLocalDeviceAddr+0x8>
+ 40c:	90 e0       	ldi	r25, 0x00	; 0
+ 40e:	8e 7f       	andi	r24, 0xFE	; 254
+ 410:	98 2b       	or	r25, r24
+ 412:	90 93 ba 00 	sts	0x00BA, r25
 }
- 3ee:	08 95       	ret
+ 416:	08 95       	ret
 
-000003f0 <i2cSetSlaveReceiveHandler>:
+00000418 <i2cSetSlaveReceiveHandler>:
 
 void i2cSetSlaveReceiveHandler(void (*i2cSlaveRx_func)(u08 receiveDataLength, u08* recieveData))
 {
 	i2cSlaveReceive = i2cSlaveRx_func;
- 3f0:	90 93 0c 01 	sts	0x010C, r25
- 3f4:	80 93 0b 01 	sts	0x010B, r24
+ 418:	90 93 0c 01 	sts	0x010C, r25
+ 41c:	80 93 0b 01 	sts	0x010B, r24
 }
- 3f8:	08 95       	ret
+ 420:	08 95       	ret
 
-000003fa <i2cSetSlaveTransmitHandler>:
+00000422 <i2cSetSlaveTransmitHandler>:
 
 void i2cSetSlaveTransmitHandler(u08 (*i2cSlaveTx_func)(u08 transmitDataLengthMax, u08* transmitData))
 {
 	i2cSlaveTransmit = i2cSlaveTx_func;
- 3fa:	90 93 0e 01 	sts	0x010E, r25
- 3fe:	80 93 0d 01 	sts	0x010D, r24
+ 422:	90 93 0e 01 	sts	0x010E, r25
+ 426:	80 93 0d 01 	sts	0x010D, r24
 }
- 402:	08 95       	ret
+ 42a:	08 95       	ret
 
-00000404 <i2cSendStart>:
+0000042c <i2cSendStart>:
 
 inline void i2cSendStart(void)
 {
 	// send start condition
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTA));
- 404:	ec eb       	ldi	r30, 0xBC	; 188
- 406:	f0 e0       	ldi	r31, 0x00	; 0
- 408:	80 81       	ld	r24, Z
- 40a:	8f 70       	andi	r24, 0x0F	; 15
- 40c:	80 6a       	ori	r24, 0xA0	; 160
- 40e:	80 83       	st	Z, r24
+ 42c:	ec eb       	ldi	r30, 0xBC	; 188
+ 42e:	f0 e0       	ldi	r31, 0x00	; 0
+ 430:	80 81       	ld	r24, Z
+ 432:	8f 70       	andi	r24, 0x0F	; 15
+ 434:	80 6a       	ori	r24, 0xA0	; 160
+ 436:	80 83       	st	Z, r24
 }
- 410:	08 95       	ret
+ 438:	08 95       	ret
 
-00000412 <i2cSendStop>:
+0000043a <i2cSendStop>:
 
 inline void i2cSendStop(void)
 {
 	// transmit stop condition
 	// leave with TWEA on for slave receiving
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA)|BV(TWSTO));
- 412:	ec eb       	ldi	r30, 0xBC	; 188
- 414:	f0 e0       	ldi	r31, 0x00	; 0
- 416:	80 81       	ld	r24, Z
- 418:	8f 70       	andi	r24, 0x0F	; 15
- 41a:	80 6d       	ori	r24, 0xD0	; 208
- 41c:	80 83       	st	Z, r24
+ 43a:	ec eb       	ldi	r30, 0xBC	; 188
+ 43c:	f0 e0       	ldi	r31, 0x00	; 0
+ 43e:	80 81       	ld	r24, Z
+ 440:	8f 70       	andi	r24, 0x0F	; 15
+ 442:	80 6d       	ori	r24, 0xD0	; 208
+ 444:	80 83       	st	Z, r24
 }
- 41e:	08 95       	ret
+ 446:	08 95       	ret
 
-00000420 <i2cWaitForComplete>:
+00000448 <i2cWaitForComplete>:
 
 inline void i2cWaitForComplete(void)
 {
 	// wait for i2c interface to complete operation
 	while( !(inb(TWCR) & BV(TWINT)) );
- 420:	ec eb       	ldi	r30, 0xBC	; 188
- 422:	f0 e0       	ldi	r31, 0x00	; 0
- 424:	80 81       	ld	r24, Z
- 426:	88 23       	and	r24, r24
- 428:	ec f7       	brge	.-6      	; 0x424 <i2cWaitForComplete+0x4>
+ 448:	ec eb       	ldi	r30, 0xBC	; 188
+ 44a:	f0 e0       	ldi	r31, 0x00	; 0
+ 44c:	80 81       	ld	r24, Z
+ 44e:	88 23       	and	r24, r24
+ 450:	ec f7       	brge	.-6      	; 0x44c <i2cWaitForComplete+0x4>
 }
- 42a:	08 95       	ret
+ 452:	08 95       	ret
 
-0000042c <i2cSendByte>:
+00000454 <i2cSendByte>:
 
 inline void i2cSendByte(u08 data)
 {
 	// save data to the TWDR
 	outb(TWDR, data);
- 42c:	80 93 bb 00 	sts	0x00BB, r24
+ 454:	80 93 bb 00 	sts	0x00BB, r24
 	// begin send
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 430:	ec eb       	ldi	r30, 0xBC	; 188
- 432:	f0 e0       	ldi	r31, 0x00	; 0
- 434:	80 81       	ld	r24, Z
- 436:	8f 70       	andi	r24, 0x0F	; 15
- 438:	80 68       	ori	r24, 0x80	; 128
- 43a:	80 83       	st	Z, r24
+ 458:	ec eb       	ldi	r30, 0xBC	; 188
+ 45a:	f0 e0       	ldi	r31, 0x00	; 0
+ 45c:	80 81       	ld	r24, Z
+ 45e:	8f 70       	andi	r24, 0x0F	; 15
+ 460:	80 68       	ori	r24, 0x80	; 128
+ 462:	80 83       	st	Z, r24
 }
- 43c:	08 95       	ret
+ 464:	08 95       	ret
 
-0000043e <i2cReceiveByte>:
+00000466 <i2cReceiveByte>:
 
 inline void i2cReceiveByte(u08 ackFlag)
 {
 	// begin receive over i2c
 	if( ackFlag )
- 43e:	88 23       	and	r24, r24
- 440:	39 f0       	breq	.+14     	; 0x450 <i2cReceiveByte+0x12>
+ 466:	88 23       	and	r24, r24
+ 468:	39 f0       	breq	.+14     	; 0x478 <i2cReceiveByte+0x12>
 	{
 		// ackFlag = TRUE: ACK the recevied data
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
- 442:	ec eb       	ldi	r30, 0xBC	; 188
- 444:	f0 e0       	ldi	r31, 0x00	; 0
- 446:	80 81       	ld	r24, Z
- 448:	8f 70       	andi	r24, 0x0F	; 15
- 44a:	80 6c       	ori	r24, 0xC0	; 192
- 44c:	80 83       	st	Z, r24
- 44e:	08 95       	ret
+ 46a:	ec eb       	ldi	r30, 0xBC	; 188
+ 46c:	f0 e0       	ldi	r31, 0x00	; 0
+ 46e:	80 81       	ld	r24, Z
+ 470:	8f 70       	andi	r24, 0x0F	; 15
+ 472:	80 6c       	ori	r24, 0xC0	; 192
+ 474:	80 83       	st	Z, r24
+ 476:	08 95       	ret
 	}
 	else
 	{
 		// ackFlag = FALSE: NACK the recevied data
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 450:	ec eb       	ldi	r30, 0xBC	; 188
- 452:	f0 e0       	ldi	r31, 0x00	; 0
- 454:	80 81       	ld	r24, Z
- 456:	8f 70       	andi	r24, 0x0F	; 15
- 458:	80 68       	ori	r24, 0x80	; 128
- 45a:	80 83       	st	Z, r24
- 45c:	08 95       	ret
+ 478:	ec eb       	ldi	r30, 0xBC	; 188
+ 47a:	f0 e0       	ldi	r31, 0x00	; 0
+ 47c:	80 81       	ld	r24, Z
+ 47e:	8f 70       	andi	r24, 0x0F	; 15
+ 480:	80 68       	ori	r24, 0x80	; 128
+ 482:	80 83       	st	Z, r24
+ 484:	08 95       	ret
 
-0000045e <i2cGetReceivedByte>:
+00000486 <i2cGetReceivedByte>:
 }
 
 inline u08 i2cGetReceivedByte(void)
 {
 	// retieve received data byte from i2c TWDR
 	return( inb(TWDR) );
- 45e:	80 91 bb 00 	lds	r24, 0x00BB
+ 486:	80 91 bb 00 	lds	r24, 0x00BB
 }
- 462:	08 95       	ret
+ 48a:	08 95       	ret
 
-00000464 <i2cGetStatus>:
+0000048c <i2cGetStatus>:
 
 inline u08 i2cGetStatus(void)
 {
 	// retieve current i2c status from i2c TWSR
 	return( inb(TWSR) );
- 464:	80 91 b9 00 	lds	r24, 0x00B9
+ 48c:	80 91 b9 00 	lds	r24, 0x00B9
 }
- 468:	08 95       	ret
+ 490:	08 95       	ret
 
-0000046a <i2cMasterSend>:
+00000492 <i2cMasterSend>:
 
 void i2cMasterSend(u08 deviceAddr, u08 length, u08* data)
 {
 	u08 i;
 	// wait for interface to be ready
 	while(I2cState);
- 46a:	90 91 02 01 	lds	r25, 0x0102
- 46e:	99 23       	and	r25, r25
- 470:	e1 f7       	brne	.-8      	; 0x46a <i2cMasterSend>
+ 492:	90 91 02 01 	lds	r25, 0x0102
+ 496:	99 23       	and	r25, r25
+ 498:	e1 f7       	brne	.-8      	; 0x492 <i2cMasterSend>
 	// set state
 	I2cState = I2C_MASTER_TX;
- 472:	92 e0       	ldi	r25, 0x02	; 2
- 474:	90 93 02 01 	sts	0x0102, r25
+ 49a:	92 e0       	ldi	r25, 0x02	; 2
+ 49c:	90 93 02 01 	sts	0x0102, r25
 	// save data
 	I2cDeviceAddrRW = (deviceAddr & 0xFE);	// RW cleared: write operation
- 478:	8e 7f       	andi	r24, 0xFE	; 254
- 47a:	80 93 03 01 	sts	0x0103, r24
+ 4a0:	8e 7f       	andi	r24, 0xFE	; 254
+ 4a2:	80 93 03 01 	sts	0x0103, r24
 	for(i=0; i<length; i++)
- 47e:	66 23       	and	r22, r22
- 480:	79 f0       	breq	.+30     	; 0x4a0 <i2cMasterSend+0x36>
- 482:	a4 2f       	mov	r26, r20
- 484:	b5 2f       	mov	r27, r21
- 486:	e6 e0       	ldi	r30, 0x06	; 6
- 488:	f1 e0       	ldi	r31, 0x01	; 1
+ 4a6:	66 23       	and	r22, r22
+ 4a8:	79 f0       	breq	.+30     	; 0x4c8 <i2cMasterSend+0x36>
+ 4aa:	a4 2f       	mov	r26, r20
+ 4ac:	b5 2f       	mov	r27, r21
+ 4ae:	e6 e0       	ldi	r30, 0x06	; 6
+ 4b0:	f1 e0       	ldi	r31, 0x01	; 1
 {
 	// retieve current i2c status from i2c TWSR
 	return( inb(TWSR) );
 }
 
 void i2cMasterSend(u08 deviceAddr, u08 length, u08* data)
- 48a:	cf 01       	movw	r24, r30
- 48c:	01 96       	adiw	r24, 0x01	; 1
- 48e:	26 2f       	mov	r18, r22
- 490:	21 50       	subi	r18, 0x01	; 1
- 492:	82 0f       	add	r24, r18
- 494:	91 1d       	adc	r25, r1
+ 4b2:	cf 01       	movw	r24, r30
+ 4b4:	01 96       	adiw	r24, 0x01	; 1
+ 4b6:	26 2f       	mov	r18, r22
+ 4b8:	21 50       	subi	r18, 0x01	; 1
+ 4ba:	82 0f       	add	r24, r18
+ 4bc:	91 1d       	adc	r25, r1
 	// set state
 	I2cState = I2C_MASTER_TX;
 	// save data
 	I2cDeviceAddrRW = (deviceAddr & 0xFE);	// RW cleared: write operation
 	for(i=0; i<length; i++)
 		I2cSendData[i] = *data++;
- 496:	2d 91       	ld	r18, X+
- 498:	21 93       	st	Z+, r18
+ 4be:	2d 91       	ld	r18, X+
+ 4c0:	21 93       	st	Z+, r18
 	while(I2cState);
 	// set state
 	I2cState = I2C_MASTER_TX;
 	// save data
 	I2cDeviceAddrRW = (deviceAddr & 0xFE);	// RW cleared: write operation
 	for(i=0; i<length; i++)
- 49a:	e8 17       	cp	r30, r24
- 49c:	f9 07       	cpc	r31, r25
- 49e:	d9 f7       	brne	.-10     	; 0x496 <i2cMasterSend+0x2c>
+ 4c2:	e8 17       	cp	r30, r24
+ 4c4:	f9 07       	cpc	r31, r25
+ 4c6:	d9 f7       	brne	.-10     	; 0x4be <i2cMasterSend+0x2c>
 		I2cSendData[i] = *data++;
 	I2cSendDataIndex = 0;
- 4a0:	10 92 04 01 	sts	0x0104, r1
+ 4c8:	10 92 04 01 	sts	0x0104, r1
 	I2cSendDataLength = length;
- 4a4:	60 93 05 01 	sts	0x0105, r22
+ 4cc:	60 93 05 01 	sts	0x0105, r22
 }
 
 inline void i2cSendStart(void)
 {
 	// send start condition
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTA));
- 4a8:	ec eb       	ldi	r30, 0xBC	; 188
- 4aa:	f0 e0       	ldi	r31, 0x00	; 0
- 4ac:	80 81       	ld	r24, Z
- 4ae:	8f 70       	andi	r24, 0x0F	; 15
- 4b0:	80 6a       	ori	r24, 0xA0	; 160
- 4b2:	80 83       	st	Z, r24
+ 4d0:	ec eb       	ldi	r30, 0xBC	; 188
+ 4d2:	f0 e0       	ldi	r31, 0x00	; 0
+ 4d4:	80 81       	ld	r24, Z
+ 4d6:	8f 70       	andi	r24, 0x0F	; 15
+ 4d8:	80 6a       	ori	r24, 0xA0	; 160
+ 4da:	80 83       	st	Z, r24
 		I2cSendData[i] = *data++;
 	I2cSendDataIndex = 0;
 	I2cSendDataLength = length;
 	// send start condition
 	i2cSendStart();
 }
- 4b4:	08 95       	ret
+ 4dc:	08 95       	ret
 
-000004b6 <i2cMasterReceive>:
+000004de <i2cMasterReceive>:
 
 void i2cMasterReceive(u08 deviceAddr, u08 length, u08* data)
 {
- 4b6:	da 01       	movw	r26, r20
+ 4de:	da 01       	movw	r26, r20
 	u08 i;
 	// wait for interface to be ready
 	while(I2cState);
- 4b8:	90 91 02 01 	lds	r25, 0x0102
- 4bc:	99 23       	and	r25, r25
- 4be:	e1 f7       	brne	.-8      	; 0x4b8 <i2cMasterReceive+0x2>
+ 4e0:	90 91 02 01 	lds	r25, 0x0102
+ 4e4:	99 23       	and	r25, r25
+ 4e6:	e1 f7       	brne	.-8      	; 0x4e0 <i2cMasterReceive+0x2>
 	// set state
 	I2cState = I2C_MASTER_RX;
- 4c0:	93 e0       	ldi	r25, 0x03	; 3
- 4c2:	90 93 02 01 	sts	0x0102, r25
+ 4e8:	93 e0       	ldi	r25, 0x03	; 3
+ 4ea:	90 93 02 01 	sts	0x0102, r25
 	// save data
 	I2cDeviceAddrRW = (deviceAddr|0x01);	// RW set: read operation
- 4c6:	81 60       	ori	r24, 0x01	; 1
- 4c8:	80 93 03 01 	sts	0x0103, r24
+ 4ee:	81 60       	ori	r24, 0x01	; 1
+ 4f0:	80 93 03 01 	sts	0x0103, r24
 	I2cReceiveDataIndex = 0;
- 4cc:	10 92 07 01 	sts	0x0107, r1
+ 4f4:	10 92 07 01 	sts	0x0107, r1
 	I2cReceiveDataLength = length;
- 4d0:	60 93 0a 01 	sts	0x010A, r22
+ 4f8:	60 93 0a 01 	sts	0x010A, r22
 }
 
 inline void i2cSendStart(void)
 {
 	// send start condition
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTA));
- 4d4:	ec eb       	ldi	r30, 0xBC	; 188
- 4d6:	f0 e0       	ldi	r31, 0x00	; 0
- 4d8:	80 81       	ld	r24, Z
- 4da:	8f 70       	andi	r24, 0x0F	; 15
- 4dc:	80 6a       	ori	r24, 0xA0	; 160
- 4de:	80 83       	st	Z, r24
+ 4fc:	ec eb       	ldi	r30, 0xBC	; 188
+ 4fe:	f0 e0       	ldi	r31, 0x00	; 0
+ 500:	80 81       	ld	r24, Z
+ 502:	8f 70       	andi	r24, 0x0F	; 15
+ 504:	80 6a       	ori	r24, 0xA0	; 160
+ 506:	80 83       	st	Z, r24
 	I2cReceiveDataIndex = 0;
 	I2cReceiveDataLength = length;
 	// send start condition
 	i2cSendStart();
 	// wait for data
 	while(I2cState);
- 4e0:	80 91 02 01 	lds	r24, 0x0102
- 4e4:	88 23       	and	r24, r24
- 4e6:	e1 f7       	brne	.-8      	; 0x4e0 <i2cMasterReceive+0x2a>
+ 508:	80 91 02 01 	lds	r24, 0x0102
+ 50c:	88 23       	and	r24, r24
+ 50e:	e1 f7       	brne	.-8      	; 0x508 <__stack+0x9>
 	// return data
 	for(i=0; i<length; i++)
- 4e8:	66 23       	and	r22, r22
- 4ea:	61 f0       	breq	.+24     	; 0x504 <__stack+0x5>
- 4ec:	e8 e0       	ldi	r30, 0x08	; 8
- 4ee:	f1 e0       	ldi	r31, 0x01	; 1
+ 510:	66 23       	and	r22, r22
+ 512:	61 f0       	breq	.+24     	; 0x52c <__stack+0x2d>
+ 514:	e8 e0       	ldi	r30, 0x08	; 8
+ 516:	f1 e0       	ldi	r31, 0x01	; 1
 	I2cSendDataLength = length;
 	// send start condition
 	i2cSendStart();
 }
 
 void i2cMasterReceive(u08 deviceAddr, u08 length, u08* data)
- 4f0:	cf 01       	movw	r24, r30
- 4f2:	01 96       	adiw	r24, 0x01	; 1
- 4f4:	61 50       	subi	r22, 0x01	; 1
- 4f6:	86 0f       	add	r24, r22
- 4f8:	91 1d       	adc	r25, r1
+ 518:	cf 01       	movw	r24, r30
+ 51a:	01 96       	adiw	r24, 0x01	; 1
+ 51c:	61 50       	subi	r22, 0x01	; 1
+ 51e:	86 0f       	add	r24, r22
+ 520:	91 1d       	adc	r25, r1
 	i2cSendStart();
 	// wait for data
 	while(I2cState);
 	// return data
 	for(i=0; i<length; i++)
 		*data++ = I2cReceiveData[i];
- 4fa:	21 91       	ld	r18, Z+
- 4fc:	2d 93       	st	X+, r18
+ 522:	21 91       	ld	r18, Z+
+ 524:	2d 93       	st	X+, r18
 	// send start condition
 	i2cSendStart();
 	// wait for data
 	while(I2cState);
 	// return data
 	for(i=0; i<length; i++)
- 4fe:	e8 17       	cp	r30, r24
- 500:	f9 07       	cpc	r31, r25
- 502:	d9 f7       	brne	.-10     	; 0x4fa <i2cMasterReceive+0x44>
- 504:	08 95       	ret
+ 526:	e8 17       	cp	r30, r24
+ 528:	f9 07       	cpc	r31, r25
+ 52a:	d9 f7       	brne	.-10     	; 0x522 <__stack+0x23>
+ 52c:	08 95       	ret
 
-00000506 <i2cMasterSendNI>:
+0000052e <i2cMasterSendNI>:
 		*data++ = I2cReceiveData[i];
 }
 
 u08 i2cMasterSendNI(u08 deviceAddr, u08 length, u08* data)
 {
- 506:	cf 93       	push	r28
- 508:	df 93       	push	r29
- 50a:	da 01       	movw	r26, r20
+ 52e:	cf 93       	push	r28
+ 530:	df 93       	push	r29
+ 532:	da 01       	movw	r26, r20
 	u08 retval = I2C_OK;
 
 	// disable TWI interrupt
 	cbi(TWCR, TWIE);
- 50c:	ec eb       	ldi	r30, 0xBC	; 188
- 50e:	f0 e0       	ldi	r31, 0x00	; 0
- 510:	90 81       	ld	r25, Z
- 512:	9e 7f       	andi	r25, 0xFE	; 254
- 514:	90 83       	st	Z, r25
+ 534:	ec eb       	ldi	r30, 0xBC	; 188
+ 536:	f0 e0       	ldi	r31, 0x00	; 0
+ 538:	90 81       	ld	r25, Z
+ 53a:	9e 7f       	andi	r25, 0xFE	; 254
+ 53c:	90 83       	st	Z, r25
 }
 
 inline void i2cSendStart(void)
 {
 	// send start condition
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTA));
- 516:	90 81       	ld	r25, Z
- 518:	9f 70       	andi	r25, 0x0F	; 15
- 51a:	90 6a       	ori	r25, 0xA0	; 160
- 51c:	90 83       	st	Z, r25
+ 53e:	90 81       	ld	r25, Z
+ 540:	9f 70       	andi	r25, 0x0F	; 15
+ 542:	90 6a       	ori	r25, 0xA0	; 160
+ 544:	90 83       	st	Z, r25
 }
 
 inline void i2cWaitForComplete(void)
 {
 	// wait for i2c interface to complete operation
 	while( !(inb(TWCR) & BV(TWINT)) );
- 51e:	90 81       	ld	r25, Z
- 520:	99 23       	and	r25, r25
- 522:	ec f7       	brge	.-6      	; 0x51e <i2cMasterSendNI+0x18>
+ 546:	90 81       	ld	r25, Z
+ 548:	99 23       	and	r25, r25
+ 54a:	ec f7       	brge	.-6      	; 0x546 <i2cMasterSendNI+0x18>
 	// send start condition
 	i2cSendStart();
 	i2cWaitForComplete();
 
 	// send device address with write
 	i2cSendByte( deviceAddr & 0xFE );
- 524:	8e 7f       	andi	r24, 0xFE	; 254
+ 54c:	8e 7f       	andi	r24, 0xFE	; 254
 }
 
 inline void i2cSendByte(u08 data)
 {
 	// save data to the TWDR
 	outb(TWDR, data);
- 526:	80 93 bb 00 	sts	0x00BB, r24
+ 54e:	80 93 bb 00 	sts	0x00BB, r24
 	// begin send
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 52a:	ec eb       	ldi	r30, 0xBC	; 188
- 52c:	f0 e0       	ldi	r31, 0x00	; 0
- 52e:	80 81       	ld	r24, Z
- 530:	8f 70       	andi	r24, 0x0F	; 15
- 532:	80 68       	ori	r24, 0x80	; 128
- 534:	80 83       	st	Z, r24
+ 552:	ec eb       	ldi	r30, 0xBC	; 188
+ 554:	f0 e0       	ldi	r31, 0x00	; 0
+ 556:	80 81       	ld	r24, Z
+ 558:	8f 70       	andi	r24, 0x0F	; 15
+ 55a:	80 68       	ori	r24, 0x80	; 128
+ 55c:	80 83       	st	Z, r24
 }
 
 inline void i2cWaitForComplete(void)
 {
 	// wait for i2c interface to complete operation
 	while( !(inb(TWCR) & BV(TWINT)) );
- 536:	80 81       	ld	r24, Z
- 538:	88 23       	and	r24, r24
- 53a:	ec f7       	brge	.-6      	; 0x536 <i2cMasterSendNI+0x30>
+ 55e:	80 81       	ld	r24, Z
+ 560:	88 23       	and	r24, r24
+ 562:	ec f7       	brge	.-6      	; 0x55e <i2cMasterSendNI+0x30>
 	// send device address with write
 	i2cSendByte( deviceAddr & 0xFE );
 	i2cWaitForComplete();
 
 	// check if device is present and live
 	if( inb(TWSR) == TW_MT_SLA_ACK)
- 53c:	80 91 b9 00 	lds	r24, 0x00B9
- 540:	88 31       	cpi	r24, 0x18	; 24
- 542:	99 f4       	brne	.+38     	; 0x56a <i2cMasterSendNI+0x64>
+ 564:	80 91 b9 00 	lds	r24, 0x00B9
+ 568:	88 31       	cpi	r24, 0x18	; 24
+ 56a:	99 f4       	brne	.+38     	; 0x592 <i2cMasterSendNI+0x64>
 	{
 		// send data
 		while(length)
- 544:	66 23       	and	r22, r22
- 546:	99 f0       	breq	.+38     	; 0x56e <i2cMasterSendNI+0x68>
+ 56c:	66 23       	and	r22, r22
+ 56e:	99 f0       	breq	.+38     	; 0x596 <i2cMasterSendNI+0x68>
 }
 
 inline void i2cSendByte(u08 data)
 {
 	// save data to the TWDR
 	outb(TWDR, data);
- 548:	cb eb       	ldi	r28, 0xBB	; 187
- 54a:	d0 e0       	ldi	r29, 0x00	; 0
+ 570:	cb eb       	ldi	r28, 0xBB	; 187
+ 572:	d0 e0       	ldi	r29, 0x00	; 0
 	// begin send
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 54c:	ec eb       	ldi	r30, 0xBC	; 188
- 54e:	f0 e0       	ldi	r31, 0x00	; 0
+ 574:	ec eb       	ldi	r30, 0xBC	; 188
+ 576:	f0 e0       	ldi	r31, 0x00	; 0
 	if( inb(TWSR) == TW_MT_SLA_ACK)
 	{
 		// send data
 		while(length)
 		{
 			i2cSendByte( *data++ );
- 550:	8d 91       	ld	r24, X+
+ 578:	8d 91       	ld	r24, X+
 }
 
 inline void i2cSendByte(u08 data)
 {
 	// save data to the TWDR
 	outb(TWDR, data);
- 552:	88 83       	st	Y, r24
+ 57a:	88 83       	st	Y, r24
 	// begin send
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 554:	80 81       	ld	r24, Z
- 556:	8f 70       	andi	r24, 0x0F	; 15
- 558:	80 68       	ori	r24, 0x80	; 128
- 55a:	80 83       	st	Z, r24
+ 57c:	80 81       	ld	r24, Z
+ 57e:	8f 70       	andi	r24, 0x0F	; 15
+ 580:	80 68       	ori	r24, 0x80	; 128
+ 582:	80 83       	st	Z, r24
 }
 
 inline void i2cWaitForComplete(void)
 {
 	// wait for i2c interface to complete operation
 	while( !(inb(TWCR) & BV(TWINT)) );
- 55c:	80 81       	ld	r24, Z
- 55e:	88 23       	and	r24, r24
- 560:	ec f7       	brge	.-6      	; 0x55c <i2cMasterSendNI+0x56>
+ 584:	80 81       	ld	r24, Z
+ 586:	88 23       	and	r24, r24
+ 588:	ec f7       	brge	.-6      	; 0x584 <i2cMasterSendNI+0x56>
 		// send data
 		while(length)
 		{
 			i2cSendByte( *data++ );
 			i2cWaitForComplete();
 			length--;
- 562:	61 50       	subi	r22, 0x01	; 1
+ 58a:	61 50       	subi	r22, 0x01	; 1
 
 	// check if device is present and live
 	if( inb(TWSR) == TW_MT_SLA_ACK)
 	{
 		// send data
 		while(length)
- 564:	a9 f7       	brne	.-22     	; 0x550 <i2cMasterSendNI+0x4a>
+ 58c:	a9 f7       	brne	.-22     	; 0x578 <i2cMasterSendNI+0x4a>
 		*data++ = I2cReceiveData[i];
 }
 
 u08 i2cMasterSendNI(u08 deviceAddr, u08 length, u08* data)
 {
 	u08 retval = I2C_OK;
- 566:	80 e0       	ldi	r24, 0x00	; 0
- 568:	03 c0       	rjmp	.+6      	; 0x570 <i2cMasterSendNI+0x6a>
+ 58e:	80 e0       	ldi	r24, 0x00	; 0
+ 590:	03 c0       	rjmp	.+6      	; 0x598 <i2cMasterSendNI+0x6a>
 	else
 	{
 		// device did not ACK it's address,
 		// data will not be transferred
 		// return error
 		retval = I2C_ERROR_NODEV;
- 56a:	81 e0       	ldi	r24, 0x01	; 1
- 56c:	01 c0       	rjmp	.+2      	; 0x570 <i2cMasterSendNI+0x6a>
+ 592:	81 e0       	ldi	r24, 0x01	; 1
+ 594:	01 c0       	rjmp	.+2      	; 0x598 <i2cMasterSendNI+0x6a>
 		*data++ = I2cReceiveData[i];
 }
 
 u08 i2cMasterSendNI(u08 deviceAddr, u08 length, u08* data)
 {
 	u08 retval = I2C_OK;
- 56e:	80 e0       	ldi	r24, 0x00	; 0
+ 596:	80 e0       	ldi	r24, 0x00	; 0
 
 inline void i2cSendStop(void)
 {
 	// transmit stop condition
 	// leave with TWEA on for slave receiving
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA)|BV(TWSTO));
- 570:	ec eb       	ldi	r30, 0xBC	; 188
- 572:	f0 e0       	ldi	r31, 0x00	; 0
- 574:	90 81       	ld	r25, Z
- 576:	9f 70       	andi	r25, 0x0F	; 15
- 578:	90 6d       	ori	r25, 0xD0	; 208
- 57a:	90 83       	st	Z, r25
+ 598:	ec eb       	ldi	r30, 0xBC	; 188
+ 59a:	f0 e0       	ldi	r31, 0x00	; 0
+ 59c:	90 81       	ld	r25, Z
+ 59e:	9f 70       	andi	r25, 0x0F	; 15
+ 5a0:	90 6d       	ori	r25, 0xD0	; 208
+ 5a2:	90 83       	st	Z, r25
 	}
 
 	// transmit stop condition
 	// leave with TWEA on for slave receiving
 	i2cSendStop();
 	while( !(inb(TWCR) & BV(TWSTO)) );
- 57c:	90 81       	ld	r25, Z
- 57e:	94 ff       	sbrs	r25, 4
- 580:	fd cf       	rjmp	.-6      	; 0x57c <i2cMasterSendNI+0x76>
+ 5a4:	90 81       	ld	r25, Z
+ 5a6:	94 ff       	sbrs	r25, 4
+ 5a8:	fd cf       	rjmp	.-6      	; 0x5a4 <i2cMasterSendNI+0x76>
 
 	// enable TWI interrupt
 	sbi(TWCR, TWIE);
- 582:	ec eb       	ldi	r30, 0xBC	; 188
- 584:	f0 e0       	ldi	r31, 0x00	; 0
- 586:	90 81       	ld	r25, Z
- 588:	91 60       	ori	r25, 0x01	; 1
- 58a:	90 83       	st	Z, r25
+ 5aa:	ec eb       	ldi	r30, 0xBC	; 188
+ 5ac:	f0 e0       	ldi	r31, 0x00	; 0
+ 5ae:	90 81       	ld	r25, Z
+ 5b0:	91 60       	ori	r25, 0x01	; 1
+ 5b2:	90 83       	st	Z, r25
 
 	return retval;
 }
- 58c:	df 91       	pop	r29
- 58e:	cf 91       	pop	r28
- 590:	08 95       	ret
+ 5b4:	df 91       	pop	r29
+ 5b6:	cf 91       	pop	r28
+ 5b8:	08 95       	ret
 
-00000592 <i2cMasterReceiveNI>:
+000005ba <i2cMasterReceiveNI>:
 
 u08 i2cMasterReceiveNI(u08 deviceAddr, u08 length, u08 *data)
 {
- 592:	cf 93       	push	r28
- 594:	df 93       	push	r29
+ 5ba:	cf 93       	push	r28
+ 5bc:	df 93       	push	r29
 	u08 retval = I2C_OK;
 
 	// disable TWI interrupt
 	cbi(TWCR, TWIE);
- 596:	ec eb       	ldi	r30, 0xBC	; 188
- 598:	f0 e0       	ldi	r31, 0x00	; 0
- 59a:	90 81       	ld	r25, Z
- 59c:	9e 7f       	andi	r25, 0xFE	; 254
- 59e:	90 83       	st	Z, r25
+ 5be:	ec eb       	ldi	r30, 0xBC	; 188
+ 5c0:	f0 e0       	ldi	r31, 0x00	; 0
+ 5c2:	90 81       	ld	r25, Z
+ 5c4:	9e 7f       	andi	r25, 0xFE	; 254
+ 5c6:	90 83       	st	Z, r25
 }
 
 inline void i2cSendStart(void)
 {
 	// send start condition
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTA));
- 5a0:	90 81       	ld	r25, Z
- 5a2:	9f 70       	andi	r25, 0x0F	; 15
- 5a4:	90 6a       	ori	r25, 0xA0	; 160
- 5a6:	90 83       	st	Z, r25
+ 5c8:	90 81       	ld	r25, Z
+ 5ca:	9f 70       	andi	r25, 0x0F	; 15
+ 5cc:	90 6a       	ori	r25, 0xA0	; 160
+ 5ce:	90 83       	st	Z, r25
 }
 
 inline void i2cWaitForComplete(void)
 {
 	// wait for i2c interface to complete operation
 	while( !(inb(TWCR) & BV(TWINT)) );
- 5a8:	90 81       	ld	r25, Z
- 5aa:	99 23       	and	r25, r25
- 5ac:	ec f7       	brge	.-6      	; 0x5a8 <i2cMasterReceiveNI+0x16>
+ 5d0:	90 81       	ld	r25, Z
+ 5d2:	99 23       	and	r25, r25
+ 5d4:	ec f7       	brge	.-6      	; 0x5d0 <i2cMasterReceiveNI+0x16>
 	// send start condition
 	i2cSendStart();
 	i2cWaitForComplete();
 
 	// send device address with read
 	i2cSendByte( deviceAddr | 0x01 );
- 5ae:	81 60       	ori	r24, 0x01	; 1
+ 5d6:	81 60       	ori	r24, 0x01	; 1
 }
 
 inline void i2cSendByte(u08 data)
 {
 	// save data to the TWDR
 	outb(TWDR, data);
- 5b0:	80 93 bb 00 	sts	0x00BB, r24
+ 5d8:	80 93 bb 00 	sts	0x00BB, r24
 	// begin send
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 5b4:	ec eb       	ldi	r30, 0xBC	; 188
- 5b6:	f0 e0       	ldi	r31, 0x00	; 0
- 5b8:	80 81       	ld	r24, Z
- 5ba:	8f 70       	andi	r24, 0x0F	; 15
- 5bc:	80 68       	ori	r24, 0x80	; 128
- 5be:	80 83       	st	Z, r24
+ 5dc:	ec eb       	ldi	r30, 0xBC	; 188
+ 5de:	f0 e0       	ldi	r31, 0x00	; 0
+ 5e0:	80 81       	ld	r24, Z
+ 5e2:	8f 70       	andi	r24, 0x0F	; 15
+ 5e4:	80 68       	ori	r24, 0x80	; 128
+ 5e6:	80 83       	st	Z, r24
 }
 
 inline void i2cWaitForComplete(void)
 {
 	// wait for i2c interface to complete operation
 	while( !(inb(TWCR) & BV(TWINT)) );
- 5c0:	80 81       	ld	r24, Z
- 5c2:	88 23       	and	r24, r24
- 5c4:	ec f7       	brge	.-6      	; 0x5c0 <i2cMasterReceiveNI+0x2e>
+ 5e8:	80 81       	ld	r24, Z
+ 5ea:	88 23       	and	r24, r24
+ 5ec:	ec f7       	brge	.-6      	; 0x5e8 <i2cMasterReceiveNI+0x2e>
 	// send device address with read
 	i2cSendByte( deviceAddr | 0x01 );
 	i2cWaitForComplete();
 
 	// check if device is present and live
 	if( inb(TWSR) == TW_MR_SLA_ACK)
- 5c6:	80 91 b9 00 	lds	r24, 0x00B9
- 5ca:	80 34       	cpi	r24, 0x40	; 64
- 5cc:	49 f5       	brne	.+82     	; 0x620 <i2cMasterReceiveNI+0x8e>
+ 5ee:	80 91 b9 00 	lds	r24, 0x00B9
+ 5f2:	80 34       	cpi	r24, 0x40	; 64
+ 5f4:	49 f5       	brne	.+82     	; 0x648 <i2cMasterReceiveNI+0x8e>
 	{
 		// accept receive data and ack it
 		while(length > 1)
- 5ce:	62 30       	cpi	r22, 0x02	; 2
- 5d0:	c0 f0       	brcs	.+48     	; 0x602 <i2cMasterReceiveNI+0x70>
- 5d2:	da 01       	movw	r26, r20
- 5d4:	96 2f       	mov	r25, r22
+ 5f6:	62 30       	cpi	r22, 0x02	; 2
+ 5f8:	c0 f0       	brcs	.+48     	; 0x62a <i2cMasterReceiveNI+0x70>
+ 5fa:	da 01       	movw	r26, r20
+ 5fc:	96 2f       	mov	r25, r22
 {
 	// begin receive over i2c
 	if( ackFlag )
 	{
 		// ackFlag = TRUE: ACK the recevied data
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
- 5d6:	ec eb       	ldi	r30, 0xBC	; 188
- 5d8:	f0 e0       	ldi	r31, 0x00	; 0
+ 5fe:	ec eb       	ldi	r30, 0xBC	; 188
+ 600:	f0 e0       	ldi	r31, 0x00	; 0
 }
 
 inline u08 i2cGetReceivedByte(void)
 {
 	// retieve received data byte from i2c TWDR
 	return( inb(TWDR) );
- 5da:	cb eb       	ldi	r28, 0xBB	; 187
- 5dc:	d0 e0       	ldi	r29, 0x00	; 0
+ 602:	cb eb       	ldi	r28, 0xBB	; 187
+ 604:	d0 e0       	ldi	r29, 0x00	; 0
 {
 	// begin receive over i2c
 	if( ackFlag )
 	{
 		// ackFlag = TRUE: ACK the recevied data
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
- 5de:	80 81       	ld	r24, Z
- 5e0:	8f 70       	andi	r24, 0x0F	; 15
- 5e2:	80 6c       	ori	r24, 0xC0	; 192
- 5e4:	80 83       	st	Z, r24
-}
-
-inline void i2cWaitForComplete(void)
-{
-	// wait for i2c interface to complete operation
-	while( !(inb(TWCR) & BV(TWINT)) );
- 5e6:	80 81       	ld	r24, Z
- 5e8:	88 23       	and	r24, r24
- 5ea:	ec f7       	brge	.-6      	; 0x5e6 <i2cMasterReceiveNI+0x54>
-}
-
-inline u08 i2cGetReceivedByte(void)
-{
-	// retieve received data byte from i2c TWDR
-	return( inb(TWDR) );
- 5ec:	88 81       	ld	r24, Y
-		// accept receive data and ack it
-		while(length > 1)
-		{
-			i2cReceiveByte(TRUE);
-			i2cWaitForComplete();
-			*data++ = i2cGetReceivedByte();
- 5ee:	8d 93       	st	X+, r24
-			// decrement length
-			length--;
- 5f0:	91 50       	subi	r25, 0x01	; 1
-
-	// check if device is present and live
-	if( inb(TWSR) == TW_MR_SLA_ACK)
-	{
-		// accept receive data and ack it
-		while(length > 1)
- 5f2:	92 30       	cpi	r25, 0x02	; 2
- 5f4:	a0 f7       	brcc	.-24     	; 0x5de <i2cMasterReceiveNI+0x4c>
-	sbi(TWCR, TWIE);
-
-	return retval;
-}
-
-u08 i2cMasterReceiveNI(u08 deviceAddr, u08 length, u08 *data)
- 5f6:	62 50       	subi	r22, 0x02	; 2
- 5f8:	86 2f       	mov	r24, r22
- 5fa:	90 e0       	ldi	r25, 0x00	; 0
- 5fc:	01 96       	adiw	r24, 0x01	; 1
-
-	// check if device is present and live
-	if( inb(TWSR) == TW_MR_SLA_ACK)
-	{
-		// accept receive data and ack it
-		while(length > 1)
- 5fe:	48 0f       	add	r20, r24
- 600:	59 1f       	adc	r21, r25
-		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
-	}
-	else
-	{
-		// ackFlag = FALSE: NACK the recevied data
-		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 602:	ec eb       	ldi	r30, 0xBC	; 188
- 604:	f0 e0       	ldi	r31, 0x00	; 0
  606:	80 81       	ld	r24, Z
  608:	8f 70       	andi	r24, 0x0F	; 15
- 60a:	80 68       	ori	r24, 0x80	; 128
+ 60a:	80 6c       	ori	r24, 0xC0	; 192
  60c:	80 83       	st	Z, r24
 }
 
@@ -1417,540 +1391,604 @@ inline void i2cWaitForComplete(void)
 	while( !(inb(TWCR) & BV(TWINT)) );
  60e:	80 81       	ld	r24, Z
  610:	88 23       	and	r24, r24
- 612:	ec f7       	brge	.-6      	; 0x60e <i2cMasterReceiveNI+0x7c>
+ 612:	ec f7       	brge	.-6      	; 0x60e <i2cMasterReceiveNI+0x54>
 }
 
 inline u08 i2cGetReceivedByte(void)
 {
 	// retieve received data byte from i2c TWDR
 	return( inb(TWDR) );
- 614:	80 91 bb 00 	lds	r24, 0x00BB
+ 614:	88 81       	ld	r24, Y
+		// accept receive data and ack it
+		while(length > 1)
+		{
+			i2cReceiveByte(TRUE);
+			i2cWaitForComplete();
+			*data++ = i2cGetReceivedByte();
+ 616:	8d 93       	st	X+, r24
+			// decrement length
+			length--;
+ 618:	91 50       	subi	r25, 0x01	; 1
+
+	// check if device is present and live
+	if( inb(TWSR) == TW_MR_SLA_ACK)
+	{
+		// accept receive data and ack it
+		while(length > 1)
+ 61a:	92 30       	cpi	r25, 0x02	; 2
+ 61c:	a0 f7       	brcc	.-24     	; 0x606 <i2cMasterReceiveNI+0x4c>
+	sbi(TWCR, TWIE);
+
+	return retval;
+}
+
+u08 i2cMasterReceiveNI(u08 deviceAddr, u08 length, u08 *data)
+ 61e:	62 50       	subi	r22, 0x02	; 2
+ 620:	86 2f       	mov	r24, r22
+ 622:	90 e0       	ldi	r25, 0x00	; 0
+ 624:	01 96       	adiw	r24, 0x01	; 1
+
+	// check if device is present and live
+	if( inb(TWSR) == TW_MR_SLA_ACK)
+	{
+		// accept receive data and ack it
+		while(length > 1)
+ 626:	48 0f       	add	r20, r24
+ 628:	59 1f       	adc	r21, r25
+		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
+	}
+	else
+	{
+		// ackFlag = FALSE: NACK the recevied data
+		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
+ 62a:	ec eb       	ldi	r30, 0xBC	; 188
+ 62c:	f0 e0       	ldi	r31, 0x00	; 0
+ 62e:	80 81       	ld	r24, Z
+ 630:	8f 70       	andi	r24, 0x0F	; 15
+ 632:	80 68       	ori	r24, 0x80	; 128
+ 634:	80 83       	st	Z, r24
+}
+
+inline void i2cWaitForComplete(void)
+{
+	// wait for i2c interface to complete operation
+	while( !(inb(TWCR) & BV(TWINT)) );
+ 636:	80 81       	ld	r24, Z
+ 638:	88 23       	and	r24, r24
+ 63a:	ec f7       	brge	.-6      	; 0x636 <i2cMasterReceiveNI+0x7c>
+}
+
+inline u08 i2cGetReceivedByte(void)
+{
+	// retieve received data byte from i2c TWDR
+	return( inb(TWDR) );
+ 63c:	80 91 bb 00 	lds	r24, 0x00BB
 		}
 
 		// accept receive data and nack it (last-byte signal)
 		i2cReceiveByte(FALSE);
 		i2cWaitForComplete();
 		*data++ = i2cGetReceivedByte();
- 618:	fa 01       	movw	r30, r20
- 61a:	80 83       	st	Z, r24
+ 640:	fa 01       	movw	r30, r20
+ 642:	80 83       	st	Z, r24
 	return retval;
 }
 
 u08 i2cMasterReceiveNI(u08 deviceAddr, u08 length, u08 *data)
 {
 	u08 retval = I2C_OK;
- 61c:	80 e0       	ldi	r24, 0x00	; 0
- 61e:	01 c0       	rjmp	.+2      	; 0x622 <i2cMasterReceiveNI+0x90>
+ 644:	80 e0       	ldi	r24, 0x00	; 0
+ 646:	01 c0       	rjmp	.+2      	; 0x64a <i2cMasterReceiveNI+0x90>
 	else
 	{
 		// device did not ACK it's address,
 		// data will not be transferred
 		// return error
 		retval = I2C_ERROR_NODEV;
- 620:	81 e0       	ldi	r24, 0x01	; 1
+ 648:	81 e0       	ldi	r24, 0x01	; 1
 
 inline void i2cSendStop(void)
 {
 	// transmit stop condition
 	// leave with TWEA on for slave receiving
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA)|BV(TWSTO));
- 622:	ec eb       	ldi	r30, 0xBC	; 188
- 624:	f0 e0       	ldi	r31, 0x00	; 0
- 626:	90 81       	ld	r25, Z
- 628:	9f 70       	andi	r25, 0x0F	; 15
- 62a:	90 6d       	ori	r25, 0xD0	; 208
- 62c:	90 83       	st	Z, r25
+ 64a:	ec eb       	ldi	r30, 0xBC	; 188
+ 64c:	f0 e0       	ldi	r31, 0x00	; 0
+ 64e:	90 81       	ld	r25, Z
+ 650:	9f 70       	andi	r25, 0x0F	; 15
+ 652:	90 6d       	ori	r25, 0xD0	; 208
+ 654:	90 83       	st	Z, r25
 	// transmit stop condition
 	// leave with TWEA on for slave receiving
 	i2cSendStop();
 
 	// enable TWI interrupt
 	sbi(TWCR, TWIE);
- 62e:	90 81       	ld	r25, Z
- 630:	91 60       	ori	r25, 0x01	; 1
- 632:	90 83       	st	Z, r25
+ 656:	90 81       	ld	r25, Z
+ 658:	91 60       	ori	r25, 0x01	; 1
+ 65a:	90 83       	st	Z, r25
 
 	return retval;
 }
- 634:	df 91       	pop	r29
- 636:	cf 91       	pop	r28
- 638:	08 95       	ret
+ 65c:	df 91       	pop	r29
+ 65e:	cf 91       	pop	r28
+ 660:	08 95       	ret
 
-0000063a <__vector_24>:
+00000662 <__vector_24>:
 }
 */
 
 //! I2C (TWI) interrupt service routine
 SIGNAL(SIG_2WIRE_SERIAL)
 {
- 63a:	1f 92       	push	r1
- 63c:	0f 92       	push	r0
- 63e:	0f b6       	in	r0, 0x3f	; 63
- 640:	0f 92       	push	r0
- 642:	11 24       	eor	r1, r1
- 644:	2f 93       	push	r18
- 646:	3f 93       	push	r19
- 648:	4f 93       	push	r20
- 64a:	5f 93       	push	r21
- 64c:	6f 93       	push	r22
- 64e:	7f 93       	push	r23
- 650:	8f 93       	push	r24
- 652:	9f 93       	push	r25
- 654:	af 93       	push	r26
- 656:	bf 93       	push	r27
- 658:	ef 93       	push	r30
- 65a:	ff 93       	push	r31
+ 662:	1f 92       	push	r1
+ 664:	0f 92       	push	r0
+ 666:	0f b6       	in	r0, 0x3f	; 63
+ 668:	0f 92       	push	r0
+ 66a:	11 24       	eor	r1, r1
+ 66c:	2f 93       	push	r18
+ 66e:	3f 93       	push	r19
+ 670:	4f 93       	push	r20
+ 672:	5f 93       	push	r21
+ 674:	6f 93       	push	r22
+ 676:	7f 93       	push	r23
+ 678:	8f 93       	push	r24
+ 67a:	9f 93       	push	r25
+ 67c:	af 93       	push	r26
+ 67e:	bf 93       	push	r27
+ 680:	ef 93       	push	r30
+ 682:	ff 93       	push	r31
 	// read status bits
 	u08 status = inb(TWSR) & TWSR_STATUS_MASK;
- 65c:	e0 91 b9 00 	lds	r30, 0x00B9
- 660:	e8 7f       	andi	r30, 0xF8	; 248
+ 684:	e0 91 b9 00 	lds	r30, 0x00B9
+ 688:	e8 7f       	andi	r30, 0xF8	; 248
 
 	switch(status)
- 662:	f0 e0       	ldi	r31, 0x00	; 0
- 664:	e9 3c       	cpi	r30, 0xC9	; 201
- 666:	f1 05       	cpc	r31, r1
- 668:	08 f0       	brcs	.+2      	; 0x66c <__vector_24+0x32>
- 66a:	f3 c0       	rjmp	.+486    	; 0x852 <__vector_24+0x218>
- 66c:	e6 5e       	subi	r30, 0xE6	; 230
- 66e:	ff 4f       	sbci	r31, 0xFF	; 255
- 670:	09 94       	ijmp
+ 68a:	f0 e0       	ldi	r31, 0x00	; 0
+ 68c:	e9 3c       	cpi	r30, 0xC9	; 201
+ 68e:	f1 05       	cpc	r31, r1
+ 690:	08 f0       	brcs	.+2      	; 0x694 <__vector_24+0x32>
+ 692:	f3 c0       	rjmp	.+486    	; 0x87a <__vector_24+0x218>
+ 694:	e6 5e       	subi	r30, 0xE6	; 230
+ 696:	ff 4f       	sbci	r31, 0xFF	; 255
+ 698:	09 94       	ijmp
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: M->START\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// send device address
 		i2cSendByte(I2cDeviceAddrRW);
- 672:	80 91 03 01 	lds	r24, 0x0103
+ 69a:	80 91 03 01 	lds	r24, 0x0103
 }
 
 inline void i2cSendByte(u08 data)
 {
 	// save data to the TWDR
 	outb(TWDR, data);
- 676:	80 93 bb 00 	sts	0x00BB, r24
+ 69e:	80 93 bb 00 	sts	0x00BB, r24
 	// begin send
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 67a:	ec eb       	ldi	r30, 0xBC	; 188
- 67c:	f0 e0       	ldi	r31, 0x00	; 0
- 67e:	80 81       	ld	r24, Z
- 680:	8f 70       	andi	r24, 0x0F	; 15
- 682:	80 68       	ori	r24, 0x80	; 128
- 684:	80 83       	st	Z, r24
- 686:	e5 c0       	rjmp	.+458    	; 0x852 <__vector_24+0x218>
+ 6a2:	ec eb       	ldi	r30, 0xBC	; 188
+ 6a4:	f0 e0       	ldi	r31, 0x00	; 0
+ 6a6:	80 81       	ld	r24, Z
+ 6a8:	8f 70       	andi	r24, 0x0F	; 15
+ 6aa:	80 68       	ori	r24, 0x80	; 128
+ 6ac:	80 83       	st	Z, r24
+ 6ae:	e5 c0       	rjmp	.+458    	; 0x87a <__vector_24+0x218>
 		#ifdef I2C_DEBUG
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: MT->SLA_ACK or DATA_ACK\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		if(I2cSendDataIndex < I2cSendDataLength)
- 688:	80 91 04 01 	lds	r24, 0x0104
- 68c:	90 91 05 01 	lds	r25, 0x0105
- 690:	89 17       	cp	r24, r25
- 692:	88 f4       	brcc	.+34     	; 0x6b6 <__vector_24+0x7c>
+ 6b0:	80 91 04 01 	lds	r24, 0x0104
+ 6b4:	90 91 05 01 	lds	r25, 0x0105
+ 6b8:	89 17       	cp	r24, r25
+ 6ba:	88 f4       	brcc	.+34     	; 0x6de <__vector_24+0x7c>
 		{
 			// send data
 			i2cSendByte( I2cSendData[I2cSendDataIndex++] );
- 694:	e8 2f       	mov	r30, r24
- 696:	f0 e0       	ldi	r31, 0x00	; 0
- 698:	ea 5f       	subi	r30, 0xFA	; 250
- 69a:	fe 4f       	sbci	r31, 0xFE	; 254
- 69c:	90 81       	ld	r25, Z
- 69e:	8f 5f       	subi	r24, 0xFF	; 255
- 6a0:	80 93 04 01 	sts	0x0104, r24
+ 6bc:	e8 2f       	mov	r30, r24
+ 6be:	f0 e0       	ldi	r31, 0x00	; 0
+ 6c0:	ea 5f       	subi	r30, 0xFA	; 250
+ 6c2:	fe 4f       	sbci	r31, 0xFE	; 254
+ 6c4:	90 81       	ld	r25, Z
+ 6c6:	8f 5f       	subi	r24, 0xFF	; 255
+ 6c8:	80 93 04 01 	sts	0x0104, r24
 }
 
 inline void i2cSendByte(u08 data)
 {
 	// save data to the TWDR
 	outb(TWDR, data);
- 6a4:	90 93 bb 00 	sts	0x00BB, r25
+ 6cc:	90 93 bb 00 	sts	0x00BB, r25
 	// begin send
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 6a8:	ec eb       	ldi	r30, 0xBC	; 188
- 6aa:	f0 e0       	ldi	r31, 0x00	; 0
- 6ac:	80 81       	ld	r24, Z
- 6ae:	8f 70       	andi	r24, 0x0F	; 15
- 6b0:	80 68       	ori	r24, 0x80	; 128
- 6b2:	80 83       	st	Z, r24
- 6b4:	ce c0       	rjmp	.+412    	; 0x852 <__vector_24+0x218>
+ 6d0:	ec eb       	ldi	r30, 0xBC	; 188
+ 6d2:	f0 e0       	ldi	r31, 0x00	; 0
+ 6d4:	80 81       	ld	r24, Z
+ 6d6:	8f 70       	andi	r24, 0x0F	; 15
+ 6d8:	80 68       	ori	r24, 0x80	; 128
+ 6da:	80 83       	st	Z, r24
+ 6dc:	ce c0       	rjmp	.+412    	; 0x87a <__vector_24+0x218>
 
 inline void i2cSendStop(void)
 {
 	// transmit stop condition
 	// leave with TWEA on for slave receiving
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA)|BV(TWSTO));
- 6b6:	ec eb       	ldi	r30, 0xBC	; 188
- 6b8:	f0 e0       	ldi	r31, 0x00	; 0
- 6ba:	80 81       	ld	r24, Z
- 6bc:	8f 70       	andi	r24, 0x0F	; 15
- 6be:	80 6d       	ori	r24, 0xD0	; 208
- 6c0:	80 83       	st	Z, r24
+ 6de:	ec eb       	ldi	r30, 0xBC	; 188
+ 6e0:	f0 e0       	ldi	r31, 0x00	; 0
+ 6e2:	80 81       	ld	r24, Z
+ 6e4:	8f 70       	andi	r24, 0x0F	; 15
+ 6e6:	80 6d       	ori	r24, 0xD0	; 208
+ 6e8:	80 83       	st	Z, r24
 		else
 		{
 			// transmit stop condition, enable SLA ACK
 			i2cSendStop();
 			// set state
 			I2cState = I2C_IDLE;
- 6c2:	10 92 02 01 	sts	0x0102, r1
- 6c6:	c5 c0       	rjmp	.+394    	; 0x852 <__vector_24+0x218>
+ 6ea:	10 92 02 01 	sts	0x0102, r1
+ 6ee:	c5 c0       	rjmp	.+394    	; 0x87a <__vector_24+0x218>
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: MR->DATA_NACK\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// store final received data byte
 		I2cReceiveData[I2cReceiveDataIndex++] = inb(TWDR);
- 6c8:	80 91 07 01 	lds	r24, 0x0107
- 6cc:	90 91 bb 00 	lds	r25, 0x00BB
- 6d0:	e8 2f       	mov	r30, r24
- 6d2:	f0 e0       	ldi	r31, 0x00	; 0
- 6d4:	e8 5f       	subi	r30, 0xF8	; 248
- 6d6:	fe 4f       	sbci	r31, 0xFE	; 254
- 6d8:	90 83       	st	Z, r25
- 6da:	8f 5f       	subi	r24, 0xFF	; 255
- 6dc:	80 93 07 01 	sts	0x0107, r24
+ 6f0:	80 91 07 01 	lds	r24, 0x0107
+ 6f4:	90 91 bb 00 	lds	r25, 0x00BB
+ 6f8:	e8 2f       	mov	r30, r24
+ 6fa:	f0 e0       	ldi	r31, 0x00	; 0
+ 6fc:	e8 5f       	subi	r30, 0xF8	; 248
+ 6fe:	fe 4f       	sbci	r31, 0xFE	; 254
+ 700:	90 83       	st	Z, r25
+ 702:	8f 5f       	subi	r24, 0xFF	; 255
+ 704:	80 93 07 01 	sts	0x0107, r24
 
 inline void i2cSendStop(void)
 {
 	// transmit stop condition
 	// leave with TWEA on for slave receiving
 	outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA)|BV(TWSTO));
- 6e0:	ec eb       	ldi	r30, 0xBC	; 188
- 6e2:	f0 e0       	ldi	r31, 0x00	; 0
- 6e4:	80 81       	ld	r24, Z
- 6e6:	8f 70       	andi	r24, 0x0F	; 15
- 6e8:	80 6d       	ori	r24, 0xD0	; 208
- 6ea:	80 83       	st	Z, r24
+ 708:	ec eb       	ldi	r30, 0xBC	; 188
+ 70a:	f0 e0       	ldi	r31, 0x00	; 0
+ 70c:	80 81       	ld	r24, Z
+ 70e:	8f 70       	andi	r24, 0x0F	; 15
+ 710:	80 6d       	ori	r24, 0xD0	; 208
+ 712:	80 83       	st	Z, r24
 		rprintfInit(uart1SendByte);
 		#endif
 		// transmit stop condition, enable SLA ACK
 		i2cSendStop();
 		// set state
 		I2cState = I2C_IDLE;
- 6ec:	10 92 02 01 	sts	0x0102, r1
+ 714:	10 92 02 01 	sts	0x0102, r1
 		break;
- 6f0:	b0 c0       	rjmp	.+352    	; 0x852 <__vector_24+0x218>
+ 718:	b0 c0       	rjmp	.+352    	; 0x87a <__vector_24+0x218>
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: MT->ARB_LOST\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// release bus
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 6f2:	ec eb       	ldi	r30, 0xBC	; 188
- 6f4:	f0 e0       	ldi	r31, 0x00	; 0
- 6f6:	80 81       	ld	r24, Z
- 6f8:	8f 70       	andi	r24, 0x0F	; 15
- 6fa:	80 68       	ori	r24, 0x80	; 128
- 6fc:	80 83       	st	Z, r24
+ 71a:	ec eb       	ldi	r30, 0xBC	; 188
+ 71c:	f0 e0       	ldi	r31, 0x00	; 0
+ 71e:	80 81       	ld	r24, Z
+ 720:	8f 70       	andi	r24, 0x0F	; 15
+ 722:	80 68       	ori	r24, 0x80	; 128
+ 724:	80 83       	st	Z, r24
 		// set state
 		I2cState = I2C_IDLE;
- 6fe:	10 92 02 01 	sts	0x0102, r1
+ 726:	10 92 02 01 	sts	0x0102, r1
 		// release bus and transmit start when bus is free
 		//outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTA));
 		break;
- 702:	a7 c0       	rjmp	.+334    	; 0x852 <__vector_24+0x218>
+ 72a:	a7 c0       	rjmp	.+334    	; 0x87a <__vector_24+0x218>
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: MR->DATA_ACK\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// store received data byte
 		I2cReceiveData[I2cReceiveDataIndex++] = inb(TWDR);
- 704:	80 91 07 01 	lds	r24, 0x0107
- 708:	90 91 bb 00 	lds	r25, 0x00BB
- 70c:	e8 2f       	mov	r30, r24
- 70e:	f0 e0       	ldi	r31, 0x00	; 0
- 710:	e8 5f       	subi	r30, 0xF8	; 248
- 712:	fe 4f       	sbci	r31, 0xFE	; 254
- 714:	90 83       	st	Z, r25
- 716:	8f 5f       	subi	r24, 0xFF	; 255
- 718:	80 93 07 01 	sts	0x0107, r24
+ 72c:	80 91 07 01 	lds	r24, 0x0107
+ 730:	90 91 bb 00 	lds	r25, 0x00BB
+ 734:	e8 2f       	mov	r30, r24
+ 736:	f0 e0       	ldi	r31, 0x00	; 0
+ 738:	e8 5f       	subi	r30, 0xF8	; 248
+ 73a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 73c:	90 83       	st	Z, r25
+ 73e:	8f 5f       	subi	r24, 0xFF	; 255
+ 740:	80 93 07 01 	sts	0x0107, r24
 		#ifdef I2C_DEBUG
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: MR->SLA_ACK\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		if(I2cReceiveDataIndex < (I2cReceiveDataLength-1))
- 71c:	20 91 07 01 	lds	r18, 0x0107
- 720:	30 e0       	ldi	r19, 0x00	; 0
- 722:	80 91 0a 01 	lds	r24, 0x010A
- 726:	90 e0       	ldi	r25, 0x00	; 0
- 728:	01 97       	sbiw	r24, 0x01	; 1
- 72a:	28 17       	cp	r18, r24
- 72c:	39 07       	cpc	r19, r25
- 72e:	3c f4       	brge	.+14     	; 0x73e <__vector_24+0x104>
+ 744:	20 91 07 01 	lds	r18, 0x0107
+ 748:	30 e0       	ldi	r19, 0x00	; 0
+ 74a:	80 91 0a 01 	lds	r24, 0x010A
+ 74e:	90 e0       	ldi	r25, 0x00	; 0
+ 750:	01 97       	sbiw	r24, 0x01	; 1
+ 752:	28 17       	cp	r18, r24
+ 754:	39 07       	cpc	r19, r25
+ 756:	3c f4       	brge	.+14     	; 0x766 <__vector_24+0x104>
 {
 	// begin receive over i2c
 	if( ackFlag )
 	{
 		// ackFlag = TRUE: ACK the recevied data
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
- 730:	ec eb       	ldi	r30, 0xBC	; 188
- 732:	f0 e0       	ldi	r31, 0x00	; 0
- 734:	80 81       	ld	r24, Z
- 736:	8f 70       	andi	r24, 0x0F	; 15
- 738:	80 6c       	ori	r24, 0xC0	; 192
- 73a:	80 83       	st	Z, r24
- 73c:	8a c0       	rjmp	.+276    	; 0x852 <__vector_24+0x218>
+ 758:	ec eb       	ldi	r30, 0xBC	; 188
+ 75a:	f0 e0       	ldi	r31, 0x00	; 0
+ 75c:	80 81       	ld	r24, Z
+ 75e:	8f 70       	andi	r24, 0x0F	; 15
+ 760:	80 6c       	ori	r24, 0xC0	; 192
+ 762:	80 83       	st	Z, r24
+ 764:	8a c0       	rjmp	.+276    	; 0x87a <__vector_24+0x218>
 	}
 	else
 	{
 		// ackFlag = FALSE: NACK the recevied data
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 73e:	ec eb       	ldi	r30, 0xBC	; 188
- 740:	f0 e0       	ldi	r31, 0x00	; 0
- 742:	80 81       	ld	r24, Z
- 744:	8f 70       	andi	r24, 0x0F	; 15
- 746:	80 68       	ori	r24, 0x80	; 128
- 748:	80 83       	st	Z, r24
- 74a:	83 c0       	rjmp	.+262    	; 0x852 <__vector_24+0x218>
+ 766:	ec eb       	ldi	r30, 0xBC	; 188
+ 768:	f0 e0       	ldi	r31, 0x00	; 0
+ 76a:	80 81       	ld	r24, Z
+ 76c:	8f 70       	andi	r24, 0x0F	; 15
+ 76e:	80 68       	ori	r24, 0x80	; 128
+ 770:	80 83       	st	Z, r24
+ 772:	83 c0       	rjmp	.+262    	; 0x87a <__vector_24+0x218>
 		rprintf("I2C: SR->SLA_ACK\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// we are being addressed as slave for writing (data will be received from master)
 		// set state
 		I2cState = I2C_SLAVE_RX;
- 74c:	85 e0       	ldi	r24, 0x05	; 5
- 74e:	80 93 02 01 	sts	0x0102, r24
+ 774:	85 e0       	ldi	r24, 0x05	; 5
+ 776:	80 93 02 01 	sts	0x0102, r24
 		// prepare buffer
 		I2cReceiveDataIndex = 0;
- 752:	10 92 07 01 	sts	0x0107, r1
+ 77a:	10 92 07 01 	sts	0x0107, r1
 		// receive data byte and return ACK
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
- 756:	ec eb       	ldi	r30, 0xBC	; 188
- 758:	f0 e0       	ldi	r31, 0x00	; 0
- 75a:	80 81       	ld	r24, Z
- 75c:	8f 70       	andi	r24, 0x0F	; 15
- 75e:	80 6c       	ori	r24, 0xC0	; 192
- 760:	80 83       	st	Z, r24
+ 77e:	ec eb       	ldi	r30, 0xBC	; 188
+ 780:	f0 e0       	ldi	r31, 0x00	; 0
+ 782:	80 81       	ld	r24, Z
+ 784:	8f 70       	andi	r24, 0x0F	; 15
+ 786:	80 6c       	ori	r24, 0xC0	; 192
+ 788:	80 83       	st	Z, r24
 		break;
- 762:	77 c0       	rjmp	.+238    	; 0x852 <__vector_24+0x218>
+ 78a:	77 c0       	rjmp	.+238    	; 0x87a <__vector_24+0x218>
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: SR->DATA_ACK\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// get previously received data byte
 		I2cReceiveData[I2cReceiveDataIndex++] = inb(TWDR);
- 764:	80 91 07 01 	lds	r24, 0x0107
- 768:	90 91 bb 00 	lds	r25, 0x00BB
- 76c:	e8 2f       	mov	r30, r24
- 76e:	f0 e0       	ldi	r31, 0x00	; 0
- 770:	e8 5f       	subi	r30, 0xF8	; 248
- 772:	fe 4f       	sbci	r31, 0xFE	; 254
- 774:	90 83       	st	Z, r25
- 776:	8f 5f       	subi	r24, 0xFF	; 255
- 778:	80 93 07 01 	sts	0x0107, r24
+ 78c:	80 91 07 01 	lds	r24, 0x0107
+ 790:	90 91 bb 00 	lds	r25, 0x00BB
+ 794:	e8 2f       	mov	r30, r24
+ 796:	f0 e0       	ldi	r31, 0x00	; 0
+ 798:	e8 5f       	subi	r30, 0xF8	; 248
+ 79a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 79c:	90 83       	st	Z, r25
+ 79e:	8f 5f       	subi	r24, 0xFF	; 255
+ 7a0:	80 93 07 01 	sts	0x0107, r24
 		// check receive buffer status
 		if(I2cReceiveDataIndex < I2C_RECEIVE_DATA_BUFFER_SIZE)
- 77c:	82 30       	cpi	r24, 0x02	; 2
- 77e:	38 f4       	brcc	.+14     	; 0x78e <__vector_24+0x154>
+ 7a4:	82 30       	cpi	r24, 0x02	; 2
+ 7a6:	38 f4       	brcc	.+14     	; 0x7b6 <__vector_24+0x154>
 {
 	// begin receive over i2c
 	if( ackFlag )
 	{
 		// ackFlag = TRUE: ACK the recevied data
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
- 780:	ec eb       	ldi	r30, 0xBC	; 188
- 782:	f0 e0       	ldi	r31, 0x00	; 0
- 784:	80 81       	ld	r24, Z
- 786:	8f 70       	andi	r24, 0x0F	; 15
- 788:	80 6c       	ori	r24, 0xC0	; 192
- 78a:	80 83       	st	Z, r24
- 78c:	62 c0       	rjmp	.+196    	; 0x852 <__vector_24+0x218>
+ 7a8:	ec eb       	ldi	r30, 0xBC	; 188
+ 7aa:	f0 e0       	ldi	r31, 0x00	; 0
+ 7ac:	80 81       	ld	r24, Z
+ 7ae:	8f 70       	andi	r24, 0x0F	; 15
+ 7b0:	80 6c       	ori	r24, 0xC0	; 192
+ 7b2:	80 83       	st	Z, r24
+ 7b4:	62 c0       	rjmp	.+196    	; 0x87a <__vector_24+0x218>
 	}
 	else
 	{
 		// ackFlag = FALSE: NACK the recevied data
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 78e:	ec eb       	ldi	r30, 0xBC	; 188
- 790:	f0 e0       	ldi	r31, 0x00	; 0
- 792:	80 81       	ld	r24, Z
- 794:	8f 70       	andi	r24, 0x0F	; 15
- 796:	80 68       	ori	r24, 0x80	; 128
- 798:	80 83       	st	Z, r24
- 79a:	5b c0       	rjmp	.+182    	; 0x852 <__vector_24+0x218>
- 79c:	ec eb       	ldi	r30, 0xBC	; 188
- 79e:	f0 e0       	ldi	r31, 0x00	; 0
- 7a0:	80 81       	ld	r24, Z
- 7a2:	8f 70       	andi	r24, 0x0F	; 15
- 7a4:	80 68       	ori	r24, 0x80	; 128
- 7a6:	80 83       	st	Z, r24
- 7a8:	54 c0       	rjmp	.+168    	; 0x852 <__vector_24+0x218>
+ 7b6:	ec eb       	ldi	r30, 0xBC	; 188
+ 7b8:	f0 e0       	ldi	r31, 0x00	; 0
+ 7ba:	80 81       	ld	r24, Z
+ 7bc:	8f 70       	andi	r24, 0x0F	; 15
+ 7be:	80 68       	ori	r24, 0x80	; 128
+ 7c0:	80 83       	st	Z, r24
+ 7c2:	5b c0       	rjmp	.+182    	; 0x87a <__vector_24+0x218>
+ 7c4:	ec eb       	ldi	r30, 0xBC	; 188
+ 7c6:	f0 e0       	ldi	r31, 0x00	; 0
+ 7c8:	80 81       	ld	r24, Z
+ 7ca:	8f 70       	andi	r24, 0x0F	; 15
+ 7cc:	80 68       	ori	r24, 0x80	; 128
+ 7ce:	80 83       	st	Z, r24
+ 7d0:	54 c0       	rjmp	.+168    	; 0x87a <__vector_24+0x218>
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: SR->SR_STOP\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// switch to SR mode with SLA ACK
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
- 7aa:	ec eb       	ldi	r30, 0xBC	; 188
- 7ac:	f0 e0       	ldi	r31, 0x00	; 0
- 7ae:	80 81       	ld	r24, Z
- 7b0:	8f 70       	andi	r24, 0x0F	; 15
- 7b2:	80 6c       	ori	r24, 0xC0	; 192
- 7b4:	80 83       	st	Z, r24
+ 7d2:	ec eb       	ldi	r30, 0xBC	; 188
+ 7d4:	f0 e0       	ldi	r31, 0x00	; 0
+ 7d6:	80 81       	ld	r24, Z
+ 7d8:	8f 70       	andi	r24, 0x0F	; 15
+ 7da:	80 6c       	ori	r24, 0xC0	; 192
+ 7dc:	80 83       	st	Z, r24
 		// i2c receive is complete, call i2cSlaveReceive
 		if(i2cSlaveReceive) i2cSlaveReceive(I2cReceiveDataIndex, I2cReceiveData);
- 7b6:	e0 91 0b 01 	lds	r30, 0x010B
- 7ba:	f0 91 0c 01 	lds	r31, 0x010C
- 7be:	30 97       	sbiw	r30, 0x00	; 0
- 7c0:	29 f0       	breq	.+10     	; 0x7cc <__vector_24+0x192>
- 7c2:	80 91 07 01 	lds	r24, 0x0107
- 7c6:	68 e0       	ldi	r22, 0x08	; 8
- 7c8:	71 e0       	ldi	r23, 0x01	; 1
- 7ca:	09 95       	icall
+ 7de:	e0 91 0b 01 	lds	r30, 0x010B
+ 7e2:	f0 91 0c 01 	lds	r31, 0x010C
+ 7e6:	30 97       	sbiw	r30, 0x00	; 0
+ 7e8:	29 f0       	breq	.+10     	; 0x7f4 <__vector_24+0x192>
+ 7ea:	80 91 07 01 	lds	r24, 0x0107
+ 7ee:	68 e0       	ldi	r22, 0x08	; 8
+ 7f0:	71 e0       	ldi	r23, 0x01	; 1
+ 7f2:	09 95       	icall
 		// set state
 		I2cState = I2C_IDLE;
- 7cc:	10 92 02 01 	sts	0x0102, r1
+ 7f4:	10 92 02 01 	sts	0x0102, r1
 		break;
- 7d0:	40 c0       	rjmp	.+128    	; 0x852 <__vector_24+0x218>
+ 7f8:	40 c0       	rjmp	.+128    	; 0x87a <__vector_24+0x218>
 		rprintf("I2C: ST->SLA_ACK\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// we are being addressed as slave for reading (data must be transmitted back to master)
 		// set state
 		I2cState = I2C_SLAVE_TX;
- 7d2:	84 e0       	ldi	r24, 0x04	; 4
- 7d4:	80 93 02 01 	sts	0x0102, r24
+ 7fa:	84 e0       	ldi	r24, 0x04	; 4
+ 7fc:	80 93 02 01 	sts	0x0102, r24
 		// request data from application
 		if(i2cSlaveTransmit) I2cSendDataLength = i2cSlaveTransmit(I2C_SEND_DATA_BUFFER_SIZE, I2cSendData);
- 7d8:	e0 91 0d 01 	lds	r30, 0x010D
- 7dc:	f0 91 0e 01 	lds	r31, 0x010E
- 7e0:	30 97       	sbiw	r30, 0x00	; 0
- 7e2:	31 f0       	breq	.+12     	; 0x7f0 <__vector_24+0x1b6>
- 7e4:	81 e0       	ldi	r24, 0x01	; 1
- 7e6:	66 e0       	ldi	r22, 0x06	; 6
- 7e8:	71 e0       	ldi	r23, 0x01	; 1
- 7ea:	09 95       	icall
- 7ec:	80 93 05 01 	sts	0x0105, r24
+ 800:	e0 91 0d 01 	lds	r30, 0x010D
+ 804:	f0 91 0e 01 	lds	r31, 0x010E
+ 808:	30 97       	sbiw	r30, 0x00	; 0
+ 80a:	31 f0       	breq	.+12     	; 0x818 <__vector_24+0x1b6>
+ 80c:	81 e0       	ldi	r24, 0x01	; 1
+ 80e:	66 e0       	ldi	r22, 0x06	; 6
+ 810:	71 e0       	ldi	r23, 0x01	; 1
+ 812:	09 95       	icall
+ 814:	80 93 05 01 	sts	0x0105, r24
 		// reset data index
 		I2cSendDataIndex = 0;
- 7f0:	10 92 04 01 	sts	0x0104, r1
+ 818:	10 92 04 01 	sts	0x0104, r1
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: ST->DATA_ACK\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// transmit data byte
 		outb(TWDR, I2cSendData[I2cSendDataIndex++]);
- 7f4:	80 91 04 01 	lds	r24, 0x0104
- 7f8:	e8 2f       	mov	r30, r24
- 7fa:	f0 e0       	ldi	r31, 0x00	; 0
- 7fc:	ea 5f       	subi	r30, 0xFA	; 250
- 7fe:	fe 4f       	sbci	r31, 0xFE	; 254
- 800:	90 81       	ld	r25, Z
- 802:	90 93 bb 00 	sts	0x00BB, r25
- 806:	8f 5f       	subi	r24, 0xFF	; 255
- 808:	80 93 04 01 	sts	0x0104, r24
+ 81c:	80 91 04 01 	lds	r24, 0x0104
+ 820:	e8 2f       	mov	r30, r24
+ 822:	f0 e0       	ldi	r31, 0x00	; 0
+ 824:	ea 5f       	subi	r30, 0xFA	; 250
+ 826:	fe 4f       	sbci	r31, 0xFE	; 254
+ 828:	90 81       	ld	r25, Z
+ 82a:	90 93 bb 00 	sts	0x00BB, r25
+ 82e:	8f 5f       	subi	r24, 0xFF	; 255
+ 830:	80 93 04 01 	sts	0x0104, r24
 		if(I2cSendDataIndex < I2cSendDataLength)
- 80c:	90 91 05 01 	lds	r25, 0x0105
- 810:	89 17       	cp	r24, r25
- 812:	38 f4       	brcc	.+14     	; 0x822 <__vector_24+0x1e8>
+ 834:	90 91 05 01 	lds	r25, 0x0105
+ 838:	89 17       	cp	r24, r25
+ 83a:	38 f4       	brcc	.+14     	; 0x84a <__vector_24+0x1e8>
 			// expect ACK to data byte
 			outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
- 814:	ec eb       	ldi	r30, 0xBC	; 188
- 816:	f0 e0       	ldi	r31, 0x00	; 0
- 818:	80 81       	ld	r24, Z
- 81a:	8f 70       	andi	r24, 0x0F	; 15
- 81c:	80 6c       	ori	r24, 0xC0	; 192
- 81e:	80 83       	st	Z, r24
- 820:	18 c0       	rjmp	.+48     	; 0x852 <__vector_24+0x218>
+ 83c:	ec eb       	ldi	r30, 0xBC	; 188
+ 83e:	f0 e0       	ldi	r31, 0x00	; 0
+ 840:	80 81       	ld	r24, Z
+ 842:	8f 70       	andi	r24, 0x0F	; 15
+ 844:	80 6c       	ori	r24, 0xC0	; 192
+ 846:	80 83       	st	Z, r24
+ 848:	18 c0       	rjmp	.+48     	; 0x87a <__vector_24+0x218>
 		else
 			// expect NACK to data byte
 			outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT));
- 822:	ec eb       	ldi	r30, 0xBC	; 188
- 824:	f0 e0       	ldi	r31, 0x00	; 0
- 826:	80 81       	ld	r24, Z
- 828:	8f 70       	andi	r24, 0x0F	; 15
- 82a:	80 68       	ori	r24, 0x80	; 128
- 82c:	80 83       	st	Z, r24
- 82e:	11 c0       	rjmp	.+34     	; 0x852 <__vector_24+0x218>
+ 84a:	ec eb       	ldi	r30, 0xBC	; 188
+ 84c:	f0 e0       	ldi	r31, 0x00	; 0
+ 84e:	80 81       	ld	r24, Z
+ 850:	8f 70       	andi	r24, 0x0F	; 15
+ 852:	80 68       	ori	r24, 0x80	; 128
+ 854:	80 83       	st	Z, r24
+ 856:	11 c0       	rjmp	.+34     	; 0x87a <__vector_24+0x218>
 		rprintf("I2C: ST->DATA_NACK or LAST_DATA\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// all done
 		// switch to open slave
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWEA));
- 830:	ec eb       	ldi	r30, 0xBC	; 188
- 832:	f0 e0       	ldi	r31, 0x00	; 0
- 834:	80 81       	ld	r24, Z
- 836:	8f 70       	andi	r24, 0x0F	; 15
- 838:	80 6c       	ori	r24, 0xC0	; 192
- 83a:	80 83       	st	Z, r24
+ 858:	ec eb       	ldi	r30, 0xBC	; 188
+ 85a:	f0 e0       	ldi	r31, 0x00	; 0
+ 85c:	80 81       	ld	r24, Z
+ 85e:	8f 70       	andi	r24, 0x0F	; 15
+ 860:	80 6c       	ori	r24, 0xC0	; 192
+ 862:	80 83       	st	Z, r24
 		// set state
 		I2cState = I2C_IDLE;
- 83c:	10 92 02 01 	sts	0x0102, r1
+ 864:	10 92 02 01 	sts	0x0102, r1
 		break;
- 840:	08 c0       	rjmp	.+16     	; 0x852 <__vector_24+0x218>
+ 868:	08 c0       	rjmp	.+16     	; 0x87a <__vector_24+0x218>
 		rprintfInit(uart1AddToTxBuffer);
 		rprintf("I2C: BUS_ERROR\r\n");
 		rprintfInit(uart1SendByte);
 		#endif
 		// reset internal hardware and release bus
 		outb(TWCR, (inb(TWCR)&TWCR_CMD_MASK)|BV(TWINT)|BV(TWSTO)|BV(TWEA));
- 842:	ec eb       	ldi	r30, 0xBC	; 188
- 844:	f0 e0       	ldi	r31, 0x00	; 0
- 846:	80 81       	ld	r24, Z
- 848:	8f 70       	andi	r24, 0x0F	; 15
- 84a:	80 6d       	ori	r24, 0xD0	; 208
- 84c:	80 83       	st	Z, r24
+ 86a:	ec eb       	ldi	r30, 0xBC	; 188
+ 86c:	f0 e0       	ldi	r31, 0x00	; 0
+ 86e:	80 81       	ld	r24, Z
+ 870:	8f 70       	andi	r24, 0x0F	; 15
+ 872:	80 6d       	ori	r24, 0xD0	; 208
+ 874:	80 83       	st	Z, r24
 		// set state
 		I2cState = I2C_IDLE;
- 84e:	10 92 02 01 	sts	0x0102, r1
+ 876:	10 92 02 01 	sts	0x0102, r1
 		break;
 	}
 }
- 852:	ff 91       	pop	r31
- 854:	ef 91       	pop	r30
- 856:	bf 91       	pop	r27
- 858:	af 91       	pop	r26
- 85a:	9f 91       	pop	r25
- 85c:	8f 91       	pop	r24
- 85e:	7f 91       	pop	r23
- 860:	6f 91       	pop	r22
- 862:	5f 91       	pop	r21
- 864:	4f 91       	pop	r20
- 866:	3f 91       	pop	r19
- 868:	2f 91       	pop	r18
- 86a:	0f 90       	pop	r0
- 86c:	0f be       	out	0x3f, r0	; 63
- 86e:	0f 90       	pop	r0
- 870:	1f 90       	pop	r1
- 872:	18 95       	reti
+ 87a:	ff 91       	pop	r31
+ 87c:	ef 91       	pop	r30
+ 87e:	bf 91       	pop	r27
+ 880:	af 91       	pop	r26
+ 882:	9f 91       	pop	r25
+ 884:	8f 91       	pop	r24
+ 886:	7f 91       	pop	r23
+ 888:	6f 91       	pop	r22
+ 88a:	5f 91       	pop	r21
+ 88c:	4f 91       	pop	r20
+ 88e:	3f 91       	pop	r19
+ 890:	2f 91       	pop	r18
+ 892:	0f 90       	pop	r0
+ 894:	0f be       	out	0x3f, r0	; 63
+ 896:	0f 90       	pop	r0
+ 898:	1f 90       	pop	r1
+ 89a:	18 95       	reti
 
-00000874 <i2cGetState>:
+0000089c <i2cGetState>:
 
 eI2cStateType i2cGetState(void)
 {
 	return I2cState;
- 874:	80 91 02 01 	lds	r24, 0x0102
+ 89c:	80 91 02 01 	lds	r24, 0x0102
 }
- 878:	08 95       	ret
-
-0000087a <__udivmodhi4>:
- 87a:	aa 1b       	sub	r26, r26
- 87c:	bb 1b       	sub	r27, r27
- 87e:	51 e1       	ldi	r21, 0x11	; 17
- 880:	07 c0       	rjmp	.+14     	; 0x890 <__udivmodhi4_ep>
-
-00000882 <__udivmodhi4_loop>:
- 882:	aa 1f       	adc	r26, r26
- 884:	bb 1f       	adc	r27, r27
- 886:	a6 17       	cp	r26, r22
- 888:	b7 07       	cpc	r27, r23
- 88a:	10 f0       	brcs	.+4      	; 0x890 <__udivmodhi4_ep>
- 88c:	a6 1b       	sub	r26, r22
- 88e:	b7 0b       	sbc	r27, r23
-
-00000890 <__udivmodhi4_ep>:
- 890:	88 1f       	adc	r24, r24
- 892:	99 1f       	adc	r25, r25
- 894:	5a 95       	dec	r21
- 896:	a9 f7       	brne	.-22     	; 0x882 <__udivmodhi4_loop>
- 898:	80 95       	com	r24
- 89a:	90 95       	com	r25
- 89c:	bc 01       	movw	r22, r24
- 89e:	cd 01       	movw	r24, r26
  8a0:	08 95       	ret
 
-000008a2 <_exit>:
- 8a2:	f8 94       	cli
+000008a2 <__udivmodhi4>:
+ 8a2:	aa 1b       	sub	r26, r26
+ 8a4:	bb 1b       	sub	r27, r27
+ 8a6:	51 e1       	ldi	r21, 0x11	; 17
+ 8a8:	07 c0       	rjmp	.+14     	; 0x8b8 <__udivmodhi4_ep>
 
-000008a4 <__stop_program>:
- 8a4:	ff cf       	rjmp	.-2      	; 0x8a4 <__stop_program>
+000008aa <__udivmodhi4_loop>:
+ 8aa:	aa 1f       	adc	r26, r26
+ 8ac:	bb 1f       	adc	r27, r27
+ 8ae:	a6 17       	cp	r26, r22
+ 8b0:	b7 07       	cpc	r27, r23
+ 8b2:	10 f0       	brcs	.+4      	; 0x8b8 <__udivmodhi4_ep>
+ 8b4:	a6 1b       	sub	r26, r22
+ 8b6:	b7 0b       	sbc	r27, r23
+
+000008b8 <__udivmodhi4_ep>:
+ 8b8:	88 1f       	adc	r24, r24
+ 8ba:	99 1f       	adc	r25, r25
+ 8bc:	5a 95       	dec	r21
+ 8be:	a9 f7       	brne	.-22     	; 0x8aa <__udivmodhi4_loop>
+ 8c0:	80 95       	com	r24
+ 8c2:	90 95       	com	r25
+ 8c4:	bc 01       	movw	r22, r24
+ 8c6:	cd 01       	movw	r24, r26
+ 8c8:	08 95       	ret
+
+000008ca <_exit>:
+ 8ca:	f8 94       	cli
+
+000008cc <__stop_program>:
+ 8cc:	ff cf       	rjmp	.-2      	; 0x8cc <__stop_program>

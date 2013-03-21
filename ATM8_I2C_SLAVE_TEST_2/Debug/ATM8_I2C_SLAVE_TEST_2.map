@@ -12,9 +12,8 @@ c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtool
 Allocating common symbols
 Common symbol       size              file
 
-ADC_0               0x2               ATM8_I2C_SLAVE_TEST_2.o
+A2D                 0x8               ATM8_I2C_SLAVE_TEST_2.o
 a2dCompleteFlag     0x1               a2d.o
-ADC_1               0x2               ATM8_I2C_SLAVE_TEST_2.o
 localBuffer         0x2               ATM8_I2C_SLAVE_TEST_2.o
 
 Memory Configuration
@@ -132,7 +131,7 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/av
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x8a6
+.text           0x00000000      0x8ce
  *(.vectors)
  .vectors       0x00000000       0x34 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr4/crtm88a.o
                 0x00000000                __vector_default
@@ -225,45 +224,45 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/av
                 0x00000296                a2dConvert10bit
                 0x000002d6                a2dConvert8bit
                 0x000002e2                __vector_21
- .text          0x00000300       0x70 ATM8_I2C_SLAVE_TEST_2.o
+ .text          0x00000300       0x98 ATM8_I2C_SLAVE_TEST_2.o
                 0x00000300                i2cSlaveReceiveService
-                0x00000322                i2cSlaveTransmitService
-                0x0000032e                main
- .text          0x00000370      0x50a i2c.o
-                0x00000370                i2cSetBitrate
-                0x000003a2                i2cInit
-                0x000003de                i2cSetLocalDeviceAddr
-                0x000003f0                i2cSetSlaveReceiveHandler
-                0x000003fa                i2cSetSlaveTransmitHandler
-                0x00000404                i2cSendStart
-                0x00000412                i2cSendStop
-                0x00000420                i2cWaitForComplete
-                0x0000042c                i2cSendByte
-                0x0000043e                i2cReceiveByte
-                0x0000045e                i2cGetReceivedByte
-                0x00000464                i2cGetStatus
-                0x0000046a                i2cMasterSend
-                0x000004b6                i2cMasterReceive
-                0x00000506                i2cMasterSendNI
-                0x00000592                i2cMasterReceiveNI
-                0x0000063a                __vector_24
-                0x00000874                i2cGetState
- .text          0x0000087a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_udivmodhi4.o)
- .text          0x0000087a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_exit.o)
- .text          0x0000087a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_copy_data.o)
- .text          0x0000087a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_clear_bss.o)
-                0x0000087a                . = ALIGN (0x2)
- *(.text.*)
- .text.libgcc   0x0000087a       0x28 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_udivmodhi4.o)
-                0x0000087a                __udivmodhi4
- .text.libgcc   0x000008a2        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_exit.o)
- .text.libgcc   0x000008a2        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_copy_data.o)
- .text.libgcc   0x000008a2        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_clear_bss.o)
+                0x00000340                i2cSlaveTransmitService
+                0x0000034c                main
+ .text          0x00000398      0x50a i2c.o
+                0x00000398                i2cSetBitrate
+                0x000003ca                i2cInit
+                0x00000406                i2cSetLocalDeviceAddr
+                0x00000418                i2cSetSlaveReceiveHandler
+                0x00000422                i2cSetSlaveTransmitHandler
+                0x0000042c                i2cSendStart
+                0x0000043a                i2cSendStop
+                0x00000448                i2cWaitForComplete
+                0x00000454                i2cSendByte
+                0x00000466                i2cReceiveByte
+                0x00000486                i2cGetReceivedByte
+                0x0000048c                i2cGetStatus
+                0x00000492                i2cMasterSend
+                0x000004de                i2cMasterReceive
+                0x0000052e                i2cMasterSendNI
+                0x000005ba                i2cMasterReceiveNI
+                0x00000662                __vector_24
+                0x0000089c                i2cGetState
+ .text          0x000008a2        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_udivmodhi4.o)
+ .text          0x000008a2        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_exit.o)
+ .text          0x000008a2        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_copy_data.o)
+ .text          0x000008a2        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_clear_bss.o)
                 0x000008a2                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x000008a2       0x28 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_udivmodhi4.o)
+                0x000008a2                __udivmodhi4
+ .text.libgcc   0x000008ca        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_exit.o)
+ .text.libgcc   0x000008ca        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000008ca        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_clear_bss.o)
+                0x000008ca                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000008a2        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_exit.o)
-                0x000008a2                _exit
-                0x000008a2                exit
+ .fini9         0x000008ca        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_exit.o)
+                0x000008ca                _exit
+                0x000008ca                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -282,11 +281,11 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/av
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000008a2        0x4 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_exit.o)
+ .fini0         0x000008ca        0x4 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/avr4\libgcc.a(_exit.o)
  *(.fini0)
-                0x000008a6                _etext = .
+                0x000008ce                _etext = .
 
-.data           0x00800100        0x2 load address 0x000008a6
+.data           0x00800100        0x2 load address 0x000008ce
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr4/crtm88a.o
@@ -307,7 +306,7 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/av
                 0x00800102                _edata = .
                 0x00800102                PROVIDE (__data_end, .)
 
-.bss            0x00800102       0x14
+.bss            0x00800102       0x18
                 0x00800102                PROVIDE (__bss_start, .)
  *(.bss)
  .bss           0x00800102        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/avrtoolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr4/crtm88a.o
@@ -322,20 +321,19 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/av
  *(COMMON)
  COMMON         0x0080010f        0x1 a2d.o
                 0x0080010f                a2dCompleteFlag
- COMMON         0x00800110        0x6 ATM8_I2C_SLAVE_TEST_2.o
-                0x00800110                ADC_0
-                0x00800112                ADC_1
-                0x00800114                localBuffer
-                0x00800116                PROVIDE (__bss_end, .)
-                0x000008a6                __data_load_start = LOADADDR (.data)
-                0x000008a8                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800110        0xa ATM8_I2C_SLAVE_TEST_2.o
+                0x00800110                A2D
+                0x00800118                localBuffer
+                0x0080011a                PROVIDE (__bss_end, .)
+                0x000008ce                __data_load_start = LOADADDR (.data)
+                0x000008d0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800116        0x0
-                0x00800116                PROVIDE (__noinit_start, .)
+.noinit         0x0080011a        0x0
+                0x0080011a                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00800116                PROVIDE (__noinit_end, .)
-                0x00800116                _end = .
-                0x00800116                PROVIDE (__heap_start, .)
+                0x0080011a                PROVIDE (__noinit_end, .)
+                0x0080011a                _end = .
+                0x0080011a                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -398,33 +396,33 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/av
                 0x00000040       0x20 i2c.o
 
 .debug_pubnames
-                0x00000000      0x2dc
+                0x00000000      0x2d0
  *(.debug_pubnames)
  .debug_pubnames
                 0x00000000       0xd4 a2d.o
  .debug_pubnames
-                0x000000d4       0x8c ATM8_I2C_SLAVE_TEST_2.o
+                0x000000d4       0x80 ATM8_I2C_SLAVE_TEST_2.o
  .debug_pubnames
-                0x00000160      0x17c i2c.o
+                0x00000154      0x17c i2c.o
 
-.debug_info     0x00000000      0xc48
+.debug_info     0x00000000      0xbf4
  *(.debug_info)
  .debug_info    0x00000000      0x1f7 a2d.o
- .debug_info    0x000001f7      0x29e ATM8_I2C_SLAVE_TEST_2.o
- .debug_info    0x00000495      0x7b3 i2c.o
+ .debug_info    0x000001f7      0x24a ATM8_I2C_SLAVE_TEST_2.o
+ .debug_info    0x00000441      0x7b3 i2c.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev   0x00000000      0x4e4
+.debug_abbrev   0x00000000      0x46a
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0xe7 a2d.o
- .debug_abbrev  0x000000e7      0x199 ATM8_I2C_SLAVE_TEST_2.o
- .debug_abbrev  0x00000280      0x264 i2c.o
+ .debug_abbrev  0x000000e7      0x11f ATM8_I2C_SLAVE_TEST_2.o
+ .debug_abbrev  0x00000206      0x264 i2c.o
 
-.debug_line     0x00000000      0xbd5
+.debug_line     0x00000000      0xb54
  *(.debug_line)
  .debug_line    0x00000000      0x252 a2d.o
- .debug_line    0x00000252      0x255 ATM8_I2C_SLAVE_TEST_2.o
- .debug_line    0x000004a7      0x72e i2c.o
+ .debug_line    0x00000252      0x1d4 ATM8_I2C_SLAVE_TEST_2.o
+ .debug_line    0x00000426      0x72e i2c.o
 
 .debug_frame    0x00000000      0x220
  *(.debug_frame)
@@ -432,20 +430,20 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.3.2.31/av
  .debug_frame   0x000000b0       0x40 ATM8_I2C_SLAVE_TEST_2.o
  .debug_frame   0x000000f0      0x130 i2c.o
 
-.debug_str      0x00000000      0x551
+.debug_str      0x00000000      0x564
  *(.debug_str)
  .debug_str     0x00000000      0x197 a2d.o
                                 0x1d0 (size before relaxing)
- .debug_str     0x00000197      0x128 ATM8_I2C_SLAVE_TEST_2.o
-                                0x24e (size before relaxing)
- .debug_str     0x000002bf      0x292 i2c.o
+ .debug_str     0x00000197      0x13b ATM8_I2C_SLAVE_TEST_2.o
+                                0x258 (size before relaxing)
+ .debug_str     0x000002d2      0x292 i2c.o
                                 0x3af (size before relaxing)
 
-.debug_loc      0x00000000      0x47b
+.debug_loc      0x00000000      0x4f8
  *(.debug_loc)
  .debug_loc     0x00000000       0x5f a2d.o
- .debug_loc     0x0000005f       0x26 ATM8_I2C_SLAVE_TEST_2.o
- .debug_loc     0x00000085      0x3f6 i2c.o
+ .debug_loc     0x0000005f       0xa3 ATM8_I2C_SLAVE_TEST_2.o
+ .debug_loc     0x00000102      0x3f6 i2c.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -453,13 +451,13 @@ OUTPUT(ATM8_I2C_SLAVE_TEST_2.elf elf32-avr)
 LOAD linker stubs
 
 .debug_pubtypes
-                0x00000000       0xbb
+                0x00000000       0xa1
  .debug_pubtypes
                 0x00000000       0x33 a2d.o
  .debug_pubtypes
-                0x00000033       0x48 ATM8_I2C_SLAVE_TEST_2.o
+                0x00000033       0x2e ATM8_I2C_SLAVE_TEST_2.o
  .debug_pubtypes
-                0x0000007b       0x40 i2c.o
+                0x00000061       0x40 i2c.o
 
 .debug_ranges   0x00000000       0x48
  .debug_ranges  0x00000000       0x48 i2c.o

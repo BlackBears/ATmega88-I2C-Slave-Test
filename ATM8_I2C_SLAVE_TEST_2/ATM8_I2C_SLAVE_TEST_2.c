@@ -92,7 +92,7 @@ void i2cSlaveReceiveService(u08 receiveDataLength, u08* receiveData)
 #ifdef DEBUG
 	PORTB ^= (1<<PB0);
 #endif
-	const u08 command = receiveData[0];
+	u08 command = receiveData[0];
 	if( command < 0x40 ) {
 		command -= 0x30;
 		u08 channel = command >> 1;
