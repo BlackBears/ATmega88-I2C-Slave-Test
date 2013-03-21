@@ -36,7 +36,7 @@ static const u08 LOCAL_I2C_ADDR = (0x26 << 1);
 unsigned char localBuffer[2];
 unsigned char localBufferLength = 0x02;
 
-u16 ADC[4];
+u16 A2D[4];
 
 //	operational codes
 static const u08 READ_ADC0_H = 	0x30;
@@ -67,7 +67,7 @@ int main(void) {
 	//	main loop reads the ADC's in a round-robin fashion
 	u08 current_adc = 0;
     while(1) {
-        ADC[current_adc] = a2dConvert10bit(current_adc);
+        A2D[current_adc] = a2dConvert10bit(current_adc);
         current_adc++;
         if( current_adc > 3 ) {
         	current_adc = 0;
@@ -97,11 +97,11 @@ void i2cSlaveReceiveService(u08 receiveDataLength, u08* receiveData)
 		command -= 0x30;
 		u08 channel = command >> 1;
 		if( command & 0b00000001 ) {
-			localBuffer[0] = (u08)(ADC[channel] & ~0b11110000 );
+			localBuffer[0] = (u08)(A2D[channel] & ~0b11110000 );
 			
 		}
 		else {
-			localBuffer[0] = (u08)(ADC[channel]>>8);
+			localBuffer[0] = (u08)(A2D[channel]>>8);
 		}
 	}  
 }
