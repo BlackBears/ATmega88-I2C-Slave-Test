@@ -1,10 +1,13 @@
-/*
- * global.h
- *
- * Created: 3/20/2013 10:07:47 PM
- *  Author: Administrator
- */ 
-
+/******************************************************************+
+|																	|
+|	FILE:			global.h 			 							|
+|	MCU:			ATmega 88										|
+|	DATE:			2013-03-21 06-24-37								|
+|	AUTHOR:			Alan Duncan										|
+|	ENVIRONMENT:	AVR Studio 6									|
+|	DESCRIPTION:	Global configuration params						|
+|																	|
++*******************************************************************/
 
 #ifndef GLOBAL_H_
 #define GLOBAL_H_
