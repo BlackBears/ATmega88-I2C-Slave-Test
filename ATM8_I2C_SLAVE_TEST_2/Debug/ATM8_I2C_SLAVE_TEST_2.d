@@ -14,6 +14,8 @@ ATM8_I2C_SLAVE_TEST_2.d ATM8_I2C_SLAVE_TEST_2.o: \
  c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/avr/fuse.h \
  c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/avr/lock.h \
  c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/avr/interrupt.h \
+ c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/avr/eeprom.h \
+ c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/include/stddef.h \
  c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/util/delay.h \
  c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/util/delay_basic.h \
  .././i2c.h .././i2cconf.h .././a2d.h
@@ -49,6 +51,10 @@ c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrt
 c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/avr/lock.h:
 
 c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/avr/interrupt.h:
+
+c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/avr/eeprom.h:
+
+c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/include/stddef.h:
 
 c:\program\ files\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.3.2.31\avrtoolchain\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/util/delay.h:
 
